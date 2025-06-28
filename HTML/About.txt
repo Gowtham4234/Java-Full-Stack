@@ -1,0 +1,988 @@
+Topics to be covered : 1- Introduction to HTML. 2- HTML Tags, Links and Anchors. 3- HTML Elements. 4- Tables and Forms. 5- Multimedia tags and SVG Tags.
+
+Introduction to HTML
+What is HTML ?
+
+ 
+
+HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content.
+
+ 
+
+In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house.
+
+In other words :
+HTML is the language of the web, used to create websites.
+HTML defines the backbone structure or layout of web pages that we see on the Internet.
+HTML consists of a set of tags contained within an HTML document, and the associated files typically have either a ".html" or ".htm" extension.
+There are several versions of HTML, with HTML5 being the most recent version.
+What is HTML ?
+HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content.
+
+ 
+
+In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house
+
+Features of HTML
+It is platform-independent. For example, Chrome displays the same pages identically across different operating systems such as Mac, Linux, and Windows.
+Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their website)
+HTML is a markup language and not a programming language.
+It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic) web pages.
+What is Hyper-text ?
+The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup language.' 'Hypertext' refers to the linking of text with other documents, while 'markup language' denotes a language that utilizes a specific set of tags.
+Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way using special tags.
+A quick exercise
+Open a webpage of your choice, right-click on the browser, and select ‘inspect,' and then you will see the HTML code for that page. 
+A quick exercise
+A quick exercise
+Here, you will view a html code on the right panel and in this codelab we will be learning how to go for developing such web pages using HTML code. 
+A quick exercise
+A beautiful concept of HTML, CSS and JS
+In building a webpage, think of HTML, CSS, and JavaScript as different parts of a car. HTML is like the car's skeleton, forming the basic structure and frame.
+CSS adds the paint and finishing touches, making the car look appealing with color, style, and design.
+JavaScript is similar to the engine and mechanical parts, infusing the car with functionality, movement, and interactive features.
+Similarly, when developing a website, HTML lays out the structure, CSS enhances its visual appeal, and JavaScript provides interactivity and dynamic content 
+A beautiful concept of HTML, CSS and JS
+Installation of HTML Editor
+Tools needed to make an HTML page:
+
+1) HTML Editor: It's a straightforward tool where every piece of HTML content must be written. You can use any text editor of your choice. In this tutorial, we're using Visual Studio Code because it's lightweight and open-source.
+
+
+
+Popular editors for HTML development include text editors like Notepad++ and TextEdit, code editors such as Sublime Text and Visual Studio Code, and full-fledged IDEs like WebStorm and Eclipse.
+
+Installation of HTML Editor
+Installation of HTML Editor
+2) Browser: HTML tags are not displayed by browsers; instead, they are read and interpreted to render the web page. In a web browser, HTML structures are displayed in a styled and visually appealing form. In this tutorial, we are using Google Chrome.
+
+
+
+Other commonly used browsers include Chromium, Firefox, Safari on Mac, and Microsoft Edge.
+
+Installation of HTML Editor
+Step 1: Search for "Visual Studio Code download" on Google
+Download Visual Studio Code for your Operating System.
+I am using Windows so I will install it for Windows •Go to google, and type VS CODE Download.
+Step 1: Search for "Visual Studio Code download" on Google
+Step 2: Click on Download Visual Studio Code
+
+
+Step 2: Click on Download Visual Studio Code
+Step 3: Also it is suitable for other os
+
+
+Step 3: Also it is suitable for other os
+Step 4: This is the interface you will get after downloading
+
+
+Step 4: This is the interface you will get after downloading
+Install a Live Server Extention
+we'll be installing the Live Server extension in our Visual Studio Code editor to view live reload pages.
+
+
+
+Why to install it ?
+
+
+
+The Live Server extension is used to launch a local development server with a live reload feature for HTML pages. 
+
+Install a Live Server Extention
+Step 1: Type Live Server in the text box of Extensions
+
+
+Step 1: Type Live Server in the text box of Extensions
+Step 2: Click on the first Live Server which is displayed
+
+
+Step 2: Click on the first Live Server which is displayed
+Step 3: Install the Live Server by clicking on the install button and after it get installed it will show in this way
+
+
+Step 3: Install the Live Server by clicking on the install button and after it get installed it will show in this way
+Let’s create our first HTML program with output
+HTML Execution
+
+Let's mark this as an important milestone: the creation of your first website! And what's a better way to start than with the traditional "Hello, World!"?
+
+
+
+Step 1: Click on File and select New File 
+
+Let’s create our first HTML program with output
+Step 2: name it with providing html extention because you are creating a HTML File
+
+
+Step 2: name it with providing html extention because you are creating a HTML File
+Step 3: Save creating a folder in Desktop and after saving you will get a workspace like this.
+
+
+Step 3: Save creating a folder in Desktop and after saving you will get a workspace like this.
+Step 4: Click on shift + 1 to get a “!” mark and press the enter key to get the syntax for HTML
+
+
+Step 4: Click on shift + 1 to get a “!” mark and press the enter key to get the syntax for HTML
+Doctype Declaration
+The declaration informs the web browser about the HTML version being used. The latest version is HTML5. But if this changes in the future (maybe 10 years down the line), the doctype declaration will be helpful! 
+Doctype Declaration
+HTML Root Element
+The tag is the root element that encapsulates all the content on the page.
+HTML Root Element
+Title Tag
+The <title> tag sets the title of the web page, which is displayed in the browser's title bar or tab.
+
+
+Title Tag
+HTML Head Section
+The tag contains metadata and links to external resources like CSS and JavaScript files. 
+HTML Head Section
+Body Tag
+The tag contains the visible content of the web page. This is where text, images, and other elements go.
+Every HTML page should include at least these essential elements to define the basic layout. 
+Body Tag
+Visualization of HTML Document
+
+
+Visualization of HTML Document
+Now let’s write our first program in HTML
+Write “Hello World” in body section which is reflect on the web page as you run the code. 
+
+Now let’s write our first program in HTML
+Step 2: Run the code, Press the button shown below
+
+
+Step 2: Run the code, Press the button shown below
+Go to run and press Start Debugging
+
+
+Go to run and press Start Debugging
+You have to choose a browser which is available in your device
+As I have the browsers of chrome and Edge, I am selecting Edge as my cloud engine for the o/p.
+You have to choose a browser which is available in your device
+Output :
+
+
+Output :
+Now, Try to get your name as output in the same manner
+
+
+Now, Try to get your name as output in the same manner
+HTML Tags, Links and Anchors
+If you want to build a beautiful website, tags are essential elements that help you achieve that.
+
+
+
+An HTML tag acts as a container for content or other HTML tags. Tags are words enclosed within < and > angle brackets.
+
+
+
+They serve as keywords that instruct the web browser on how to format and display the content.
+
+
+
+Commonly used tags in HTML
+
+Here are some commonly used tags in HTML. These are the only tags used 70% of the time
+
+
+
+Document Structure Tags
+
+ <!DOCTYPE html>: Specifies the document type.
+ <html>: Encloses the entire HTML document.
+ <head>: Contains meta-information and links to scripts and stylesheets.
+<body>: Contains the content of the web page.
+Metadata Tags
+<title>: Sets the title of the web page.
+
+
+
+The <title> tag in HTML is essential for defining the title of a webpage, which is displayed in the browser's title bar or tab.
+
+
+
+Metadata Tags
+Metadata Tags
+Provides metadata such as character set, author, and viewport settings and here the meta datas are contained inside the head tag. 
+Metadata Tags
+Text Formatting Tags
+<p>: Paragraph.
+
+ 
+
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Headings.
+
+ 
+
+<strong>: Strong emphasis (typically bold).
+
+ 
+
+<em>: Emphasis (typically italic).
+
+ 
+
+<br>: Line break.
+
+<p>: Let’s try the paragraph tag
+Write any content inside the <p>…</p> tag, and run it.
+
+<p>: Let’s try the paragraph tag
+Output:
+You will receive an output in your chrome or edge engines as per your choices.
+Output:
+Headings : Now let’s try heading tags
+Write contents inside the header tags, ie h1, h2, h3, h4, h5, h6 and run the code to generate o/p.
+
+Headings : Now let’s try heading tags
+Output:
+
+
+Output:
+Output:
+Try writing your name inside <h5></h5>                                                 and get a output
+
+<strong>: Now let’s try ‘Strong emphasis’ tag
+Now, write a content inside <strong>….</strong> tag, and run the code to get the output.
+
+<strong>: Now let’s try ‘Strong emphasis’ tag
+Output
+
+
+Output
+<em>: Let’s try the Emphasis tag
+Try writing “Hi Everyone” inside <em>…</em> and run the code to get the output.
+
+<em>: Let’s try the Emphasis tag
+Output:
+
+
+Output:
+<br>: Break
+
+
+<br>: Break
+Output:
+Now, Try writing your name inside the … to get a desired output.
+
+Let’s learn something on HTML List Tags
+What is List tag ?
+
+In HTML, the list tags are used to create organized lists of items. The <ul> tag defines an unordered list, where items are displayed with bullet points, while the <ol> tag creates an ordered list, displaying items in a numbered or lettered sequence.
+
+ 
+
+Types of List:
+
+ 
+
+Unordered List (<ul>): Creates a list of items where the order does not matter. The items are typically displayed with bullet points.
+
+ 
+
+Ordered List (<ol>): Creates a list of items where the order does matter, and the items are typically displayed with numbers or letters.
+
+ 
+
+Description List (<dl>): Creates a list of terms and their descriptions, typically used for glossaries or definitions.
+
+Try the Unordered List to get a list of items as provided below and run the code
+
+
+Try the Unordered List to get a list of items as provided below and run the code
+Output:
+You can observe the bullet points here. Now , let’s try it out with an example by adding some more list of items inside the <ul>….</ul> tag and run it.
+
+Output:
+You can also change the bullet styles.
+Here, the default break point is “.” and which you can change by providing the attribute “type” to Unordered List and assign a type of “square”
+
+You can also change the bullet styles.
+Output:
+
+
+Output:
+Try this out inside your html code and get the output:
+<ul>
+<li>Pen</li>
+
+<li>Pencil</li>
+
+<li>Eraser</li>
+
+</ul>
+
+ 
+
+ 
+
+<ul type="square">
+
+<li>Notebook</li>
+
+<li>Marker</li>
+
+
+
+</ul>
+
+Try this out inside your html code and get the output:
+You can go for type=“circle” for circular bullet points
+
+Try this out inside your html code and get the output:
+Output:
+
+
+Output:
+Now, let’s learn something on Hyperlinks
+Why use Hyperlink?
+
+ 
+
+Hyperlinks in HTML, created using the `<a>` (anchor) tag, are used to link one webpage to another, enabling users to navigate between different pages or resources. They provide a way to connect related content, whether it's within the same website (internal links) or to external sites (external links).
+ 
+
+Hyperlinks also allow for linking to specific parts of a webpage (anchor links), documents, images, or downloadable files, enhancing the interactivity and usability of the web. They are fundamental to the structure of the web, facilitating seamless navigation and access to vast amounts of information and resources.
+
+Why use Media Tags ?
+In HTML, media tags such as `<audio>` and `<video>` are used to embed and control media files like audio and video directly within a webpage. These tags enable web developers to incorporate multimedia content, enhancing the user experience with sound, music, and video without relying on third-party plugins.
+
+ 
+
+ 
+
+The `<audio>` tag allows embedding audio files, with options for playback controls like play, pause, and volume adjustment, while the `<video>` tag is used for embedding video files, offering similar controls for video playback. These media tags support a variety of file formats and help create rich, interactive, and  engaging web pages with multimedia content that works natively across modern browsers.
+
+Hyperlink and Media Tags used
+ <a>: Anchor (used for links).
+
+
+<img>: Image.
+
+
+<audio>: Audio content. 
+
+
+<video>: Video content.
+<a>: Let’s use Anchor tag (used for links)
+For eg: Go for a website in Chrome engine and select a web page. Right there on the top you can see a link (highlighted blue). Now copy this link and paste it inside the anchor tag and run the code.
+
+<a>: Let’s use Anchor tag (used for links)
+Paste the link in anchor tag and run it
+
+
+Paste the link in anchor tag and run it
+It will redirect you to the respective webpage
+
+
+It will redirect you to the respective webpage
+<img>: Image
+First, download an image online and select the path then after add the path to the src attribute in the img tag with height and width of the image.
+
+<img>: Image
+Output:
+
+
+Output:
+Try this
+
+
+Try this
+Output:
+
+
+Output:
+On clicking that link , You will be redirected to the web page
+
+
+On clicking that link , You will be redirected to the web page
+HTML Forms and Tables
+Form Tags
+•        <form>: Form.
+
+ 
+
+•        <input>: Input field.
+
+ 
+
+•        <textarea>: Text area.
+
+ 
+
+•        <button>: Button.
+
+ 
+
+•        <select>: Dropdown list.
+
+ 
+
+•        <option>: Options within a <select>
+
+<form>: Form
+HTML forms are essential for collecting user input on web pages. Whether it's a search bar, a login screen, or a multi-field registration form, HTML forms play a key role in web interactions. They enable users to submit data, which can be processed, stored, or returned by a server.
+
+ 
+
+ 
+
+ 
+
+Why Do We Use Forms?
+ 
+
+Forms serve as the gateway between the user and the server, allowing for dynamic, interactive web experiences. They are crucial for tasks such as user authentication, data submission, feedback collection, and more. Simply put, forms make websites more engaging and functional.
+
+HTML Forms Structure:
+
+
+The fundamental structure of an HTML form is encapsulated within the <form> tags. Inside these tags, you'll place various form controls like text fields, checkboxes, radio buttons, and buttons for submitting the form.
+
+ 
+
+Try this code :
+
+<form action="/submit" method="post">
+
+<!-- Text input for username -->
+
+<label for="username">Username:</label>
+
+<input type="text" id="username" name="username" required>
+
+<br><br>
+
+ 
+
+<!-- Password input -->
+
+<label for="password">Password:</label>
+
+<input type="password" id="password" name="password" required>
+
+<br><br>
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<!-- Radio buttons for gender -->
+
+<label>Gender:</label>
+
+<input type="radio" id="male" name="gender" value="male">
+
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+
+<label for="female">Female</label>
+
+<br><br>
+
+ 
+
+<!-- Submit button -->
+
+<input type="submit" value="Submit">
+
+</form>
+
+Implement in vs code
+
+
+Implement in vs code
+Output:
+
+
+Output:
+How to Use Form Controls?
+The <input> tag is commonly used to create form controls. The attributes of this tag define the control's behavior.
+
+ 
+
+•        The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+
+ 
+
+•        The "name" attribute is used for identifying the control, especially when the data is sent to the server.
+
+ 
+
+•        The "value" attribute sets a default value for the control, which the user can overwrite.
+
+HTML Input Types
+Input types in HTML forms are the backbone of interactive web applications. They allow users to send information to web servers for various purposes like searching, logging in, or providing feedback. In this blog, we'll explore common HTML input types: text, password, radio, and checkbox.
+
+ 
+
+ 
+
+Text Input
+
+ 
+
+The text input type is the most basic form of input and is widely used for collecting simple text data.
+
+ 
+
+<input type="text" name="username" placeholder="Enter your username">
+
+ 
+
+<input type="password" name="password" placeholder="Enter your password">
+
+Try this
+
+
+Try this
+Output:
+
+
+Output:
+Radio Buttons
+Radio buttons are used when you want the user to select only one option from a set of choices.
+
+ 
+
+ 
+
+ 
+
+
+
+Try this:
+
+ 
+
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+
+<label for="female">Female</label>
+
+Radio Buttons
+Output:
+Try this
+ 
+
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+<label for="subscribe">Subscribe to newsletter</label>
+
+Output:
+More input types
+
+
+More input types
+Textarea & Select
+In addition to the basic input types, HTML forms offer other controls like textarea and select for richer user interaction. These elements allow for more complex data collection and provide a better user experience. In this blog, we will dive into these form controls and provide examples.
+
+ 
+
+The Textarea Element
+ 
+
+The textarea element is used when you need multiline text input from the user. This is particularly useful for comments, reviews, or any other type of input where the length is unpredictable.
+
+ 
+
+Try this:
+
+ 
+
+<textarea name="comment" rows="4" cols="50"> Enter your comment here...
+</textarea>
+
+Textarea & Select
+Output:
+
+
+Output:
+The Select Element
+The select element creates a dropdown menu for the user. It is useful when you have a predefined list of options for the user to choose from.
+
+ 
+
+Try this:
+
+ 
+
+<select name="fruits">
+
+<option value="apple">Apple</option>
+
+<option value="banana">Banana</option>
+
+<option value="cherry">Cherry</option>
+
+</select>
+
+The Select Element
+Output
+
+
+Output
+Combining Textarea and Select
+You can combine textarea and select in the same form to capture varied types of user input.
+
+ 
+
+Try this:
+
+ 
+
+<form action="/submit">
+
+<textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+
+<select name="fruits">
+
+<option value="apple">Apple</option>
+
+<option value="banana">Banana</option>
+
+<option value="cherry">Cherry</option>
+
+</select>
+
+<input type="submit" value="Submit">
+
+</form>
+
+Combining Textarea and Select
+Assessment: Try to get this output:
+
+
+Assessment: Try to get this output:   
+Now, Let’s learn about HTML Tables
+HTML Tables
+ 
+
+HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the <table> tag to start and end a table.
+
+ 
+
+Syntax of HTML Table:
+
+ 
+
+<table>
+
+// table content
+
+</table>
+
+ 
+
+Key Elements of HTML Table:
+
+ 
+
+•        <table>: Defines the table itself.
+
+•        <tr>: Used for table rows.
+
+•        <th>: Used for table headings.
+
+•        <td>: Used for table cells (data).
+
+
+
+ 
+
+ 
+
+Try this
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<table>
+<tr>
+
+<th>Name</th>
+
+<th>Age</th>
+
+</tr>
+
+<tr>
+
+<td>Harry</td>
+
+<td>100</td>
+
+</tr>
+
+</table>
+
+Now, Let’s learn about HTML Tables
+rowspan and colspan Attributes
+Rowspan: If you want a table cell to span multiple rows, you can use the rowspan attribute.
+
+ 
+
+<td rowspan="value">
+
+ 
+
+ 
+
+Colspan: If you want a table cell to span multiple columns, you can use the colspan attribute.
+
+ 
+
+<td colspan="value">
+
+
+
+ 
+
+Try this for colspan:
+ 
+
+<table border="1">
+<tr>
+
+<td colspan="2">Merged Columns</td>
+
+</tr>
+
+<tr>
+
+<td>Column 1</td>
+
+<td>Column 2</td>
+
+</tr>
+
+</table>
+
+rowspan and colspan Attributes
+Try this for Rowspan
+<table border="1">
+<tr>
+
+<td>Row 1, Column 1</td>
+
+<td rowspan="2">Merged Rows</td>
+
+</tr>
+
+<tr>
+
+<td>Row 2, Column 1</td>
+
+</tr>
+
+</table>
+
+Try this for Rowspan
+Now let’s use Multimedia tags inside a form
+Multimedia tags in HTML, such as the `<audio>` and `<video>` tags, are used to embed and control media content like audio and video directly within web pages, enhancing the user experience. These tags provide a way for developers to include multimedia elements without relying on third-party plugins like Flash, making the page more accessible and mobile-friendly.
+
+ 
+
+The `<audio>` tag allows users to play sound or music, while the `<video>` tag enables video playback, both with customizable controls such as play, pause, volume, and fullscreen. By using multimedia tags, websites can present rich, interactive, and engaging content, supporting a wide range of formats and providing native support for various browsers, ensuring consistent performance across different platforms and devices.
+
+Now let’s go for Video tag
+The <video> Tag
+
+ 
+
+The <video> tag is used to embed video files in an HTML document. It supports multiple attributes to control the video playback.
+
+ 
+
+Example usage:
+
+ 
+
+<video src="video.mp4" controls></video
+
+Attributes for <video> Tag
+•            src: Specifies the path to the video file.
+
+•            controls: Adds video controls, like play, pause, and volume.
+
+•            autoplay: Automatically starts playing the video when the page loads.
+
+•            loop: Repeats the video once it ends.
+
+•            muted: Mutes the video by default.
+
+•            poster: Specifies an image to be displayed before the video starts playing.
+
+•            width and height: Specifies the dimensions of the video.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The <audio> Tag
+
+ 
+
+The <audio> tag is used to embed audio files in an HTML document. It also supports multiple attributes for control.
+
+ 
+
+Example usage:
+
+ 
+
+<audio src="audio.mp3" controls></audio>
+
+Attributes for <audio> Tag
+•         controls: Adds audio controls, like play, pause, and volume.
+
+ 
+
+•         autoplay: Automatically starts playing the audio when the page loads.
+
+ 
+
+•         loop: Repeats the audio once it ends.
+
+ 
+
+•         muted: Mutes the audio by default.
+
+ 
+
+•         preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none').
+
+Now, run this code to get a output
+<h1>Sample HTML Form with Media Tags</h1>
+
+ 
+
+<!-- Audio Embed -->
+
+<h2>Listen to an Audio Sample</h2>
+
+<audio controls>
+
+<source src="sample-audio.mp3" type="audio/mp3"> Your browser does not support the audio element.
+
+</audio>
+
+<br><br>
+
+ 
+
+<!-- Video Embed -->
+
+<h2>Watch a Video Sample</h2>
+
+<video width="320" height="240" controls>
+
+<source src="sample-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+
+</video>
+
+Now, deploy the code to get the output
+
+
+Now, deploy the code to get the output 
+Now, Let’s use SVG Tags in HTML
+What is SVG ?
+
+SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality.
+
+Why use SVG ?
+•        Scalability
+
+SVG images can be scaled indefinitely without losing quality, which is ideal for responsive web design.
+
+ 
+
+•        File Size
+
+SVG files are often smaller than their raster counterparts, especially for simple shapes and icons.
+
+ 
+
+•        Flexibility
+
+SVGs can be styled, animated, and manipulated using CSS and JavaScript
+
+Let’s learn How to Embed SVG in HTML
+SVG can be embedded in HTML in several ways:
+
+ 
+
+•         Inline SVG: Directly writing the SVG XML code within HTML.
+
+
+
+•         Using an <img> tag: Point the src attribute to an SVG file.
+
+•         Using CSS: Setting SVG as a background image in a CSS file.
+
+
+
+ 
+
+Try this code:
+ 
+
+<svg height="100" width="100">
+
+<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+
+</svg>
+
+Let’s learn How to Embed SVG in HTML
+Next Step
+Now go for increasing the size as well as change the
+
+ 
+
+color to orange
+
+Assessment : Create a webpage with an image and video below it
+
+
+Assessment : Create a webpage with an image and video below it
+Also write a paragraph about the webpage in the same code and create a form for the customers with the fields as mentioned below
+
+
+Also write a paragraph about the webpage in the same code and create a form for the customers with the fields as mentioned below
