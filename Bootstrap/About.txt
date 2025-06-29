@@ -1,0 +1,2207 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+15%
+
+Bootstrap Introduction
+Bootstrap Introduction
+Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website. 1. It is absolutely free to download and use. 2. It is a front-end framework used for easier and faster web development. 3. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many others. 4. It can also use JavaScript plug-ins. 5. It facilitates you to create responsive designs.
+
+Bootstrap Introduction
+Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website.
+
+ 
+
+1.           It is absolutely free to download and use.
+
+ 
+
+2.           It is a front-end framework used for easier and faster web development.
+
+ 
+
+3.           It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many others.
+
+ 
+
+4.           It can also use JavaScript plug-ins.
+
+ 
+
+5.           It facilitates you to create responsive designs.
+
+Why use Bootstrap
+Following are the main advantage of Bootstrap:
+
+ 
+
+It is very easy to use. Anybody having basic knowledge of HTML and CSS can use Bootstrap.
+
+ 
+
+It facilitates users to develop a responsive website.
+
+ 
+
+It is compatible on most of browsers like Chrome, Firefox, Internet Explorer, Safari and Opera etc.
+
+What is a responsive website
+A website is called responsive website which can automatically adjust itself to look good on all devices, from smart phones to desktops etc
+
+What Bootstrap package contains
+Scaffolding: Bootstrap provides a basic structure with Grid System, link styles, and background.
+
+ 
+
+CSS: Bootstrap comes with the feature of global CSS settings, fundamental HTML elements style and an advanced grid system.
+
+ 
+
+Components: Bootstrap contains a lot of reusable components built to provide iconography, dropdowns, navigation, alerts, pop-overs, and much more.
+
+Let’s take an example
+Add the HTML 5 doctype: Bootstrap uses HTML elements and CSS properties, so you have to add the HTML 5 doctype at the beginning of the page with lang attribute and correct character set.
+
+ 
+
+Ex:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows- 1252">
+
+<title>Any title</title>
+
+</head>
+
+<body>
+
+//write code
+
+</body>
+
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> Note: The "width=device-width" part is used to set the width of the  page to follow the screen-width of the device (vary according to the devices).
+
+ 
+
+The initial-scale=1 part is used to set the initial zoom level when the page is first loaded by the browser.
+
+ 
+
+Containers: container is used to wrap the site contents. There are two container classes.
+
+ 
+
+The .container class provides a responsive fixed width container.
+
+The .container-fluid class provides a full width container, spanning the entire width of the viewport.
+
+First Bootstrap Example (with responsive fixed width container)
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>This is a Bootstrap example</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> First Bootstrap web page</h1>
+
+<p>Write your text here..</p>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+First Bootstrap Example (with responsive fixed width container)
+Bootstrap Container
+In Bootstrap, container is used to set the content's margins dealing with the responsive behaviors of your layout. It contains the row elements and the row elements are the container of columns (known as grid system).
+
+ 
+
+The container class is used to create boxed content. There are two container classes in Bootstrap:
+
+1.           container
+
+2.           container-fluid
+
+See the basic layout of a container:
+<html>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-xx"></div>
+
+...
+
+</div>
+
+<div class="row">
+
+<div class="col-md-xx"></div>
+
+...
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+Bootstrap container example
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+ 
+
+<div class="container">
+
+<h1>Container</h1>
+
+<p>container content</p>
+
+</div>
+
+ 
+
+<div class="container-fluid">
+
+<h1>Container-fluid</h1>
+
+<p>container-fluid content</p>
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap container example
+Bootstrap Jumbotron
+A Bootstrap jumbotron specifies a big box for getting extra attention to some special content or information. It is displayed as a grey box with rounded corners. It can also enlarge the font sizes of the text inside it.
+
+ 
+
+You can put any valid HTML or other Bootstrap elements/ classes inside a jumbotron.
+
+ 
+
+The class .jumbotron within the <div> element is used to create a jumbotron.
+
+ 
+
+Jumbotron Inside Container
+ 
+
+The Inside container is used in jumbotron, if you want the jumbotron to not extend to the edge of the screen.
+
+Example:
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+ 
+
+<div class="container">
+
+<div class="jumbotron">
+
+<h1>This  is  Jumbotron  inside container!</h1>
+
+<p>Jumbotron specifies a big box for getting extra attention to some special content or information.</p>
+
+</div>
+
+<p>This is some text.</p>
+
+<p>This is another text.</p>
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Example:
+Jumbotron Outside Container
+Jumbotron Outside Container
+ 
+
+It is used when you want the jumbotron to extend to the screen edges. Put the jumbotron outside the <div class="container">.
+
+
+
+ 
+
+Example:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body> 
+
+<div class="jumbotron">
+
+<h1>This is Jumbotron outside container!</h1>
+
+<p>Jumbotron specifies a big box for getting extra attention to some special content or information.</p>
+
+</div>
+
+<div class="container">
+
+<p>This is some text.</p>
+
+<p>This is another text.</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Jumbotron Outside Container
+Full-width Jumbotron
+To get a jumbotron without rounded borders, you have to add the
+
+.jumbotron-fluid class and a .container or .container-fluid inside it.
+
+
+
+Example:
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script   src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+
+<div class="container">
+
+<h1>Full-width Jumbotron</h1>
+
+<p>Jumbotron specifies a big box for getting extra attention to some special content or information.</p>
+
+</div>
+
+<div class="container">
+
+<p>This is some text.</p>
+
+<p>This is another text.</p>
+
+</div>
+
+</body>
+
+</html>
+
+Full-width Jumbotron
+Bootstrap Buttons
+There are seven styles to add a button in Bootstrap. Use the following classes to achieve the different button styles:
+
+ 
+
+1.           .btn-default
+
+2.           .btn-primary
+
+3.           .btn-success
+
+4.           .btn-info
+
+5.           .btn-warning
+
+6.           .btn-danger
+
+7.           .btn-link
+
+
+
+Bootstrap Button Example: specifying seven styles
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+<h1>Button Example!</h1>
+
+<button class="btn btn-default">default</button>
+
+<button class="btn btn-primary">primary</button>
+
+<button class="btn btn-danger">danger</button>
+
+<button class="btn btn-success">success</button>
+
+<button class="btn btn-info">info</button>
+
+<button class="btn btn-warning">warning</button>
+
+<button class="btn btn-link">Link</button> 
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+Bootstrap Buttons
+There are 3 types of new buttons added in Bootstrap 4 along with 7 buttons given in Bootstrap 3.
+These 3 buttons are:
+
+ 
+
+Secondary Dark
+
+Light
+
+ 
+
+The following classes are used to specify them respectively:
+ 
+
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-light">Light</button>
+
+
+
+Example:
+
+Let's see all buttons supported in Bootstrap 4.
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0- beta.2/css/bootstrap.min.css">
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<script   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0- beta.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Button Styles</h2>
+
+<button type="button" class="btn">Basic</button>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button type="button" class="btn btn-danger">Danger</button>
+
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-light">Light</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+</div>
+
+ 
+
+</body>
+
+</html>
+
+There are 3 types of new buttons added in Bootstrap 4 along with 7 buttons given in Bootstrap 3.
+Bootstrap Grid System
+The Bootstrap Grid System allows up to 12 columns across the page. You can use all 12 columns individually or you can groups the columns together to create wider columns.
+
+ 
+
+Grid Classes:
+ 
+
+There are four classes in Bootstrap Grid System:
+
+ 
+
+1.           xs (for phones)
+
+2.           sm (for tablets)
+
+3.           md (for desktops)
+
+4.           lg (for larger desktops)
+
+ 
+
+You can combine the above classes to create more dynamic and flexible layouts.
+
+
+
+
+
+
+Basic Structure of a Bootstrap Grid:
+<div class="row">
+
+<div class="col-*-*"></div>
+
+</div>
+
+<div class="row">
+
+<div class="col-*-*"></div>
+
+<div class="col-*-*"></div>
+
+<div class="col-*-*"></div>
+
+</div>
+
+<div class="row">
+
+...
+
+</div>
+
+Follow the below instructions while creating a Bootstrap Grid:
+ 
+
+1.           Create a row (<div class="row">).
+
+2.           Add the number of columns, you want in the grid (tags with appropriate .col-*-* classes).
+
+3.           Note that numbers in .col-*-* should always add up to 12 for each row.
+
+
+
+Bootstrap Grid Example For equal columns:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Grid Example</h1>
+
+ 
+
+<div class="row">
+
+<div    class="col-md-3"style="background-color:lavender;">Rahul</div>
+
+<div    class="col-md-3"style="background-color:lavenderblush;">Vijay</div>
+
+<div   class="col-md-3"style="background-color:lavender;">Kartik</div>
+
+<div    class="col-md-3"style="background-color:lavenderblush;">Ajeet</div>
+
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Basic Structure of a Bootstrap Grid:
+For unequal columns
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+ 
+
+<div class="container">
+
+<h1>Grid Example</h1>
+
+ 
+
+<div class="row">
+
+<div    class="col-md-1"style="background-color:lavender;">Rahul</div>
+
+<div    class="col-md-2"style="background-color:lavenderblush;">Vijay</div>
+
+<div   class="col-md-4"style="background-color:lavender;">Kartik</div>
+
+<div    class="col-md-5"style="background-color:lavenderblush;">Ajeet</div>
+
+</div>
+
+ 
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+For unequal columns
+Bootstrap Tables
+We can create different types of Bootstrap tables by using different classes to style them.
+
+Bootstrap Basic Table
+The basic Bootstrap table has a light padding and only horizontal dividers. The .table class is used to add basic styling to a table. 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Basic Table Example</h1>
+
+<table class="table">
+
+<tr><th>Id</th><th>Name</th><th>Age</th></tr>
+
+<tr><td>101</td><td>Rahul</td><td>23</td></tr>
+
+<tr><td>102</td><td>Umesh</td><td>22</td></tr>
+
+<tr><td>103</td><td>Max</td><td>29</td></tr>
+
+<tr><td>104</td><td>Ajeet</td><td>21</td></tr>
+
+</table>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Basic Table
+Bootstrap Striped Rows Table
+The .table-striped class is used to add zebra-stripes to a table:
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body> 
+
+<div class="container">
+
+<h1>Striped Table Example</h1>
+
+<table class="table table-striped">
+
+<tr><th>Id</th><th>Name</th><th>Age</th></tr>
+
+<tr><td>101</td><td>Rahul</td><td>23</td></tr>
+
+<tr><td>102</td><td>Umesh</td><td>22</td></tr>
+
+<tr><td>103</td><td>Max</td><td>29</td></tr>
+
+<tr><td>104</td><td>Ajeet</td><td>21</td></tr>
+
+</table>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Striped Rows Table
+Bootstrap Hover rows Table
+The .table-hover class is used to enable a hover state on table rows:
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Job</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+
+ 
+
+<div class="container">
+
+<h1>Hower rows Table Example</h1>
+
+ 
+
+<table class="table table-hover">
+
+<tr><th>Id</th><th>Name</th><th>Age</th></tr>
+
+<tr><td>101</td><td>Rahul</td><td>23</td></tr>
+
+<tr><td>102</td><td>Umesh</td><td>22</td></tr>
+
+<tr><td>103</td><td>Max</td><td>29</td></tr>
+
+<tr><td>104</td><td>Ajeet</td><td>21</td></tr>
+
+</table>
+
+ 
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Hover rows Table
+Bootstrap Forms
+In Bootstrap, there are three types of form layouts:
+
+ 
+
+1.           Vertical form (this is default)
+
+2.           Horizontal form
+
+3.           Inline form
+
+Bootstrap Form Rules
+There are three standard rules for these 3 form layouts:
+
+ 
+
+1. Always use <form role="form"> (helps improve accessibility for people using screen readers)
+
+2. Wrap labels and form controls in <div class="form-group"> (needed for optimum  spacing)
+
+3. Add class .form-control to all textual <input>, <textarea>, and
+
+<select> elements.
+
+1) Bootstrap Vertical Form (Default)
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap example</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css "/>
+
+</head>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h1>Vertical Form Example</h1>
+
+ 
+
+<form style="width:300px">
+
+<div class="form-group">
+
+<label for="exampleInputEmail1">Email address</label>
+
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+</div>
+
+<div class="form-group">
+
+<label  for="exampleInputPassword1">Password</label>
+
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+</div>
+
+ 
+
+<button type="submit" class="btn btn-default">Login</button>
+
+</form>
+
+ 
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+1) Bootstrap Vertical Form (Default)
+2)Bootstrap Inline Form
+In Bootstrap Inline forms, all elements are inline, left-aligned, and the labels are alongside.
+
+ 
+
+This example is only applied to forms within viewports that are at least 768px wide!
+
+ 
+
+Example:
+
+ 
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Inline form Example</h2>
+
+<form class="form-inline" role="form">
+
+<form style="width:300px">
+
+<div class="form-group">
+
+<label  for="exampleInputEmail1">Email  address</label>
+
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+</div>
+
+<div class="form-group">
+
+<label  for="exampleInputPassword1">Password</label>
+
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+</div>
+
+ 
+
+<button type="submit" class="btn btn-default">Login</button>
+
+</form>
+
+ 
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+
+</body>
+
+</html>
+
+2)Bootstrap Inline Form
+3)Bootstrap Horizontal Form
+You have to add some additional rules if you want to create a horizontal form.
+
+ 
+
+Additional rules for a horizontal form:
+
+ 
+
+Add class .form-horizontal to the <form> element Add class .control-label to all <label> elements
+
+ 
+
+Example:
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Horizontal form Example</h2>
+
+<form class="form-horizontal" role="form">
+
+<form style="width:300px">
+
+<div class="form-group">
+
+<label class="control-label col-sm-2" for="email">Email:</label>
+
+<div class="col-sm-10">
+
+<input type="email" class="form-control" id="email" placeholder="Enter email">
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label class="control-label col-sm-2" for="pwd">Password:</label>
+
+<div class="col-sm-10">
+
+<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+
+</div>
+
+</div>
+
+ 
+
+<div class="form-group">
+
+<div class="col-sm-offset-2 col-sm-10">
+
+<button type="submit" class="btn btn-default">Submit</button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+
+</body>
+
+3)Bootstrap Horizontal Form
+Bootstrap carousel
+The Bootstrap carousel is a flexible, responsive way that is used to add a slider to your webpage. It is very responsive and flexible enough to allow, images, iframes, videos, or any other type of content that you want to add
+
+The Carousel Plugin
+The carousel plugin is a component for cycling through element, like a carousel. If you want to add plugin functionality individually, then you have to use carousel.js file or all at once (using "bootstrap.js" or "bootstrap.min.js").
+
+Bootstrap carousel Example
+Let's take a carousel example and see how to create a basic carousel.
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Carousel</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+
+<style>
+
+.carousel-inner > .item > img,
+
+.carousel-inner > .item > a > img { width: 80%;
+
+margin: auto;
+
+}
+
+</style>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h1>Carousel Example</h1>
+
+ 
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+
+<ol class="carousel-indicators">
+
+<li data-target="# myCarousel" data-slide-to="0" class="active"></li>
+
+<li data-target="# myCarousel" data-slide-to="1"></li>
+
+<li data-target="# myCarousel" data-slide-to="2"></li>
+
+</ol>
+
+ 
+
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+
+<div class="item active">
+
+<img src="https://picsum.photos/200/300" alt="jokes 1" >
+
+</div>
+
+ 
+
+<div class="item">
+
+<img src=" https://picsum.photos/200/300" alt="jokes 2" >
+
+</div>
+
+ 
+
+<div class="item">
+
+<img src=" https://picsum.photos/200/300" alt="jokes 3" >
+
+</div>
+
+</div>
+
+<a class="left carousel-control" href="# myCarousel" role="button" data-slide="prev">
+
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+<span class="sr-only">Previous</span>
+
+</a>
+
+<a class="right carousel-control" href="# myCarousel" role="button" data-slide="next">
+
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+<span class="sr-only">Next</span>
+
+</a>
+
+</div><!-- corousel end -->
+
+ 
+
+</div>
+
+ 
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap carousel Example
+Bootstrap Dropdowns
+Dropdown menus are toggleable, contextual menus, used for displaying links in a list format. It facilitates users to choose one value from a predefined list. This can be made interactive with the dropdown JavaScript plugin.
+
+ 
+
+You have to wrap dropdown menu within the class .dropdown to create Bootstrap Dropdown.
+
+ 
+
+Bootstrap Dropdown Example
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h2>Dropdowns</h2>
+
+<p>The .dropdown class is used to indicate a dropdown menu.</p>
+
+<p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+
+<p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data- toggle="dropdown".</p>
+
+<div class="dropdown">
+
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+
+<span class="caret"></span></button>
+
+<ul  class="dropdown-menu">
+
+<li><a href="# ">HTML</a></li>
+
+<li><a href="# ">CSS</a></li>
+
+<li><a href="# ">JavaScript</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+
+</body>
+
+</html>
+
+Bootstrap Dropdowns
+Bootstrap Dropdown Divider
+The class .divider is used to separate links inside the dropdown menu:
+
+ 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h2>Dropdowns</h2>
+
+<p>The .divider class is used to separate links inside the dropdown menu:</p>
+
+<div class="dropdown">
+
+<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+
+<span  class="caret"></span></button>
+
+<ul class="dropdown-menu">
+
+<li><a href="# ">HTML</a></li>
+
+<li><a href="# ">CSS</a></li>
+
+<li><a href="# ">JavaScript</a></li>
+
+<li class="divider"></li>
+
+<li><a href="# ">About Us</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+ 
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+
+</body>
+
+</html>
+
+Bootstrap Dropdown Divider
+Bootstrap Collapse
+Bootstrap collapse is used when you want to hide and show large amount of content.
+
+ 
+
+The ".collapse" class is used to specify the collapsible element
+
+ 
+
+Bootstrap Collapse Example
+
+ 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h2>Basic Collapse Example</h2>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="# demo">Simple collapsible</button>
+
+<div id="demo" class="collapse">
+
+Tigers and Lions are the most ferocious animals on the earth. They belong to the felidae(cat) family. They are both from the four big cats. These four big cats are Lion, Tiger, Leopard, and Jaguar.
+
+These animals reside on the top of the food chain and don't have any predators.
+
+</div>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Collapse
+Bootstrap Collapsible Panel
+You can also collapse a panel.
+
+ 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<div class="container">
+
+<h2>Collapsible Panel</h2>
+
+<div class="panel-group">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+
+<h4  class="panel-title">
+
+<a data-toggle="collapse" href="# collapse1">Collapsible panel</a>
+
+</h4>
+
+</div>
+
+<div id="collapse1" class="panel-collapse collapse">
+
+<div class="panel-body">Panel Body</div>
+
+<div class="panel-footer">Panel Footer</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Collapsible Panel
+Bootstrap Navigation Bar
+A navigation bar is like a navigation header that is placed at the top of the page. You can collapse or extend it according to the screen size.
+
+ 
+
+You can create a standard navigation bar at the top of the page with with <nav class="navbar navbar-default">.
+
+
+
+See this example:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Case</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<nav class="navbar navbar-default">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+
+<a class="navbar-brand" href="# ">WebSiteName</a>
+
+</div>
+
+<ul class="nav navbar-nav">
+
+<li class="active"><a href="# ">Home</a></li>
+
+<li><a href="# ">Page 1</a></li>
+
+<li><a href="# ">Page 2</a></li>
+
+<li><a href="# ">Page 3</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+ 
+
+<div class="container">
+
+<h3>Basic Navbar Example</h3>
+
+<p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Navigation Bar
+Bootstrap Inverted Navigation Bar
+Inverted navigation bar provides an alternative black navbar. It can be used to style the default navigation bar by changing .navbar- default class into .navbar-inverse class .
+
+ 
+
+ 
+
+See this example:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Case</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+<nav class="navbar navbar-inverse">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+
+<a class="navbar-brand" href="# ">WebSiteName</a>
+
+</div>
+
+<ul class="nav navbar-nav">
+
+<li class="active"><a href="# ">Home</a></li>
+
+<li><a href="# ">Page 1</a></li>
+
+<li><a href="# ">Page 2</a></li>
+
+<li><a href="# ">Page 3</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+ 
+
+<div class="container">
+
+<h3>Inverted Navbar</h3>
+
+<p>An inverted navbar is black instead of gray.</p>
+
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Inverted Navigation Bar
+Bootstrap Navigation Bar with Dropdown
+You can also add dropdown menu with navigation bars. The following example adds a dropdown menu for the "page 1" button.
+
+ 
+
+ 
+
+See this example:
+
+ 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Case</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+ 
+
+ 
+
+<nav class="navbar navbar-inverse">
+
+ 
+
+<div class="container-fluid">
+
+ 
+
+<div class="navbar-header">
+
+ 
+
+<a class="navbar-brand" href="#">WebSiteName</a>
+
+ 
+
+</div>
+
+ 
+
+<ul class="nav navbar-nav">
+
+ 
+
+<li class="active"><a href="#">Home</a></li>
+
+ 
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+
+ 
+
+<ul class="dropdown-menu">
+
+ 
+
+<li><a href="#">Page 1-1</a></li>
+
+ 
+
+<li><a href="#">Page 1-2</a></li>
+
+ 
+
+<li><a href="#">Page 1-3</a></li>
+
+ 
+
+</ul>
+
+ 
+
+</li>
+
+ 
+
+<li><a href="#">Page 2</a></li>
+
+
+
+  <li><a href="#">Page 3</a></li>
+
+</ul>
+
+
+
+ 
+
+<li><a href="#">Page 2</a></li>
+
+<li><a href="#">Page 3</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+ 
+
+ 
+
+<div class="container">
+
+<h3>Navbar With Dropdown</h3>
+
+<p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+Bootstrap Navigation Bar with Dropdown
+Now lets implement this Navbar in the webpage
+First, we will go for adding the CDN link in head section.
+
+Now lets implement this Navbar in the webpage
+Then we will go for adding the items in Navbar
+
+
+Then we will go for adding the items in Navbar
+Output
+k
+
+Output
+Now lets go for creating a login and register form
+For this we have to go through Bootstrap modal
+
+ 
+
+Why use a Bootstrap modal?
+ 
+
+1. Consistent UI: Provides a uniform and clean way to display dialogs, prompts, or forms (like login forms).
+
+ 
+
+2. Accessibility: Built-in ARIA attributes make it more accessible to users with assistive technologies.
+
+ 
+
+3. Responsiveness: Automatically adjusts its layout to fit various screen sizes.
+
+ 
+
+Built-in Animations: Adding the fade class gives it smooth animations without extra code.
+
+Lets provide styling to Modal component
+<div
+
+
+
+
+class="modal fade" id="loginModal" tabindex="-1"
+
+aria-labelledby="loginModalLabel" aria-hidden="true"
+
+> 
+
+1. class="modal fade“
+ 
+
+modal: This class applies the default styling for the modal component. fade: Adds a fade-in effect when the modal is shown or hidden.
+
+2.    id="loginModal"The id uniquely identifies the modal.
+
+ 
+
+It's required to control the modal's visibility (e.g., via JavaScript using
+
+$('# loginModal').modal('show’)).
+
+ 
+
+3.tabindex="-1"Prevents the modal from being focusable by tabbing through elements on the page when it’s not active.
+
+4. aria-labelledby="loginModalLabel"Associates the modal with a label (usually a heading inside the modal) to improve accessibility for screen readers.
+
+ 
+
+5.aria-hidden="true"Indicates that the modal is initially hidden. When the modal is displayed, this attribute will be dynamically set to false by Bootstrap.
+
+Section that builds the header of a login modal, including
+1.        A title ("Login to Your Account") to indicate the modal's purpose.
+ 
+
+2.        A close button to allow users to dismiss the modal easily.
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div  class="modal-header">
+
+<h5 class="modal-title" id="loginModalLabel"> Login to Your Account
+
+</h5>
+
+<button type="button" class="btn-close"
+
+data-bs-dismiss="modal" aria-label="Close"
+
+></button>
+
+</div>
+
+This part of the code defines the content and structure of a Bootstrap modal dialog.
+
+ 
+
+Let’s break down its components:
+
+ 
+
+1.           <div class="modal-dialog modal-dialog-centered">
+
+ 
+
+modal-dialog: This class specifies the container for the modal content.
+
+ 
+
+modal-dialog-centered: Vertically centers the modal within the viewport, providing better visual balance.
+
+2.<div class="modal-content">
+This class wraps all the modal content, such as the header, body, and footer.
+
+ 
+
+It ensures the content has consistent padding, borders, and background as per Bootstrap’s modal design.
+
+3.<div class="modal-header">This div represents the header section of the modal
+Inside the header:<h5 class="modal-title" id="loginModalLabel">: This defines the title of the modal as "Login to Your Account".
+
+ 
+
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria- label="Close">:This is a button for closing the modal.btn-close: Bootstrap's predefined class for close buttons.data-bs-dismiss="modal":
+
+ 
+
+This attribute triggers the modal to close when the button is clicked.
+
+ 
+
+aria-label="Close": This provides accessibility for screen readers, describing the button's action.
+
+a login form inside a modal dialog using HTML and Bootstrap classes
+
+
+<div class="modal-body">
+
+<form id="loginForm" novalidate>
+
+<div class="mb-3">
+
+<label for="loginEmail" class="form-label">Email address</label>
+
+<input type="email"
+
+class="form-control" id="loginEmail" required
+
+/>
+
+<div class="modal-body">This div contains the body of the modal dialog, which in this case, includes a form for login.
+
+ 
+
+<form id="loginForm" novalidate>id="loginForm": Assigns a unique identifier to the form for JavaScript or CSS reference.
+
+ 
+
+novalidate: This attribute disables native HTML5 form validation, allowing custom validation to be handled using JavaScript.
+
+ 
+
+<div class="mb-3">This div represents a Bootstrap form group with the class mb-3, which adds a bottom margin (mb = margin-bottom) to create space between form elements.
+
+ 
+
+<label for="loginEmail" class="form-label">Email address</label>for="loginEmail": Links the label to the input field with the matching id (loginEmail), improving accessibility.
+
+ 
+
+class="form-label": A Bootstrap class that styles the lab9e8 l appropriately.
+
+<input type="email" class="form-control" id="loginEmail" required
+/>type="email": Specifies that this is an input field for an email address.
+
+ 
+
+class="form-control": A Bootstrap class that applies proper styling to the input field.
+
+ 
+
+id="loginEmail": Unique identifier for this input field.
+
+ 
+
+required: Ensures that the user must fill out this field before submitting the form.
+
+This part of the code extends the login form by adding:Error message display for the email field.
+ 
+
+A password field with a toggle visibility button.
+
+<div  class="error-message"  id="loginEmailError">
+
+Please enter a valid email address
+
+</div>
+
+</div>
+
+<div class="mb-3">
+
+<label for="loginPassword" class="form-label">Password</label>
+
+<div class="password-container">
+
+<input type="password" class="form-control" id="loginPassword" required
+
+/>
+
+<button type="button"
+
+class="password-toggle" onclick="togglePassword('loginPassword',  'loginPasswordToggle')"
+
+> 
+
+Next Page
+1.       <div class="error-message" id="loginEmailError">This div displays an error message if the email entered is invalid.
+
+ 
+
+2.       id="loginEmailError": Used to identify and manipulate this error message element in JavaScript.
+
+ 
+
+3.       Content: "Please enter a valid email address.“
+
+ 
+
+4.       <div class="mb-3">Another form group is created for the password field using the Bootstrap mb-3 class.
+
+ 
+
+5.       <label for="loginPassword" class="form-label">Password</label>This label is associated with the password  input field.
+
+ 
+
+6.       for="loginPassword" links the label to the input field with the corresponding id.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7.    <div class="password-container">A container is added around the password input and toggle button for better styling and layout control.
+
+ 
+
+8.    <input type="password" class="form-control" id="loginPassword" required />type="password": Specifies a password input field.
+
+ 
+
+9.    class="form-control": Bootstrap class to style the input.
+
+ 
+
+10.    id="loginPassword": Unique identifier for the password input field.
+
+ 
+
+11.    required: Ensures that the password must be entered before submitting the form.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12.    <button type="button" class="password-toggle" onclick="togglePassword('loginPassword',     'loginPasswordToggle')">This button toggles the visibility of  the password.
+
+ 
+
+13.    type="button": Ensures that clicking this button does not submit the form.
+
+ 
+
+14.    class="password-toggle": A custom class for styling the toggle button.
+
+ 
+
+onclick="togglePassword('loginPassword', 'loginPasswordToggle')": Calls the JavaScript function togglePassword when the button is clicked. This function is supposed to toggle the password visibility
+
+complete the login form by adding a password visibility icon, a validation error message for the password, and a submit button styled with Bootstrap
+<i class="bi bi-eye" id="loginPasswordToggle"></i>
+
+</button>
+
+</div>
+
+<div  class="error-message"  id="loginPasswordError"> Password must be at least 6 characters
+
+</div>
+
+</div>
+
+<div class="d-grid gap-2">
+
+<button type="submit" class="btn btn- primary">Login</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+ 
+
+1.  <i class="bi bi-eye" id="loginPasswordToggle"></i>This is an icon element used to toggle the password visibility.
+
+ 
+
+class="bi bi-eye": Uses Bootstrap Icons to display an eye icon, indicating password visibility.
+
+ 
+
+id="loginPasswordToggle": The ID for this icon, which can be referenced by the JavaScript function controlling the visibility toggle.
+
+ 
+
+2.  </button>Ends the toggle button element started earlier.
+
+ 
+
+3.  <div class="error-message" id="loginPasswordError">Displays an error message for the password field.
+
+ 
+
+id="loginPasswordError": Unique identifier for the error message, used for dynamic error handling.
+
+ 
+
+Content: "Password must be at least 6 characters" — this can be shown when the password entered does not meet the minimum length requirement.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+4.    <div class="d-grid gap-2">A Bootstrap utility class (d-grid) is used to create a grid layout with a gap between elements (gap-2 adds a small gap).
+
+ 
+
+This wraps the submit button in a grid layout for better responsiveness.
+
+ 
+
+5.    <button type="submit" class="btn btn-primary">Login</button>This is the main submit button for the form.
+
+ 
+
+6.    type="submit": Specifies that clicking this button will submit the form.
+
+ 
+
+class="btn btn-primary": A Bootstrap class that styles the button as a primary button (blue by default).
+
+complete the login form by adding a password visibility icon, a validation error message for the password, and a submit button styled with Bootstrap
+In the same way you can go for registration page
+
+
+In the same way you can go for registration page
