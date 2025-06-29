@@ -1,0 +1,2331 @@
+Border Box Model Colors Display Fonts Hover Images Margin Padding Positioning Text Styling Flexbox
+
+CSS Borders
+CSS borders help define the visual boundaries of HTML elements. It can be text, div, p, h1, etc.
+
+The following are the different properties of a CSS border: Border Style
+
+Border styles define the style of the border.
+
+ 
+
+There are various types of border styles; consider the code snippet:
+
+CSS Borders
+<head>
+
+ 
+
+<style>
+
+ 
+
+.none {
+
+ 
+
+border-style: none;
+
+ 
+
+}
+
+.hidden {
+
+ 
+
+border-style: hidden;
+
+ 
+
+}
+
+ 
+
+.dotted {
+
+ 
+
+border-style: dotted;
+
+ 
+
+}
+
+ 
+
+.dashed {
+
+ 
+
+border-style: dashed;
+
+ 
+
+}
+
+ 
+
+.solid {
+
+ 
+
+border-style: solid;
+
+ 
+
+}
+
+ 
+
+.double {
+
+ 
+
+border-style: double;
+
+ 
+
+}
+
+
+
+C<on/fsidteynletia>l  ? ©2024 EduSkills                                                                         4
+
+
+
+ 
+
+<body>
+
+ 
+
+<p class="none">no border</p>
+
+ 
+
+<p class="hidden">Hidden Border</p>
+
+ 
+
+<p class="dotted">Dotted Border</p>
+
+ 
+
+<p class="dashed">Dashed Border</p>
+
+ 
+
+<p class="solid">Solid border</p>
+
+ 
+
+<p class="double">Double Border</p>
+
+ 
+
+</body>
+
+CSS Borders
+Border Color The border color property sets the colour of the border. We can use colourname, hex, rgb, or hsl to set the color
+<style>
+
+ 
+
+.dotted {
+
+ 
+
+border-style: dotted; color: purple;
+
+}
+
+ 
+
+.dashed {
+
+ 
+
+border-style: dashed; border-color: #FF0000;
+
+}
+
+ 
+
+.solid {
+
+ 
+
+border-style: solid;
+
+ 
+
+border-color: rgb(100, 233, 12);
+
+ 
+
+}
+
+ 
+
+.double {
+
+ 
+
+border-style: double; border-color: hsl(10, 50, 30);
+
+}
+
+ 
+
+</style>
+
+
+
+ 
+
+<p class="dotted">Dotted Border</p>
+
+ 
+
+<p class="dashed">Dashed Border</p>
+
+ 
+
+<p class="solid">Solid border</p>
+
+ 
+
+<p class="double">Double Border</p>
+
+ 
+
+</body>
+
+Border Color  The border color property sets the colour of the border. We can use colourname, hex, rgb, or hsl to set the color
+Border Width
+Specifies the width of the border. Sets the width of the border in pixels(px), or there are values like medium, thin, and thick to set the border width.
+
+ 
+
+Consider the code snippet
+
+<style>
+
+.solid1 {
+
+border-width: 5px;
+
+ 
+
+border-style: solid; border-color:  red;
+
+}
+
+.solid2 {
+
+border-width: thin; /* thin || medium || thick */
+
+ 
+
+border-style:  solid; border-color: # FF0000;
+
+}
+
+</style>
+
+
+
+ 
+
+<p class="solid1">Solid border 1</p>
+
+ 
+
+<p class="solid2">Solid border 2</p>
+
+ 
+
+</body>
+
+Border Width
+Border Radius Border radius helps create rounded borders for elements like buttons or images
+<style>
+
+.solid1 {
+
+border-radius: 20px;
+
+border-style: solid; border-color: red;
+
+}
+
+.solid2 {
+
+border-radius: 25%;
+
+ 
+
+border-style: solid; border-color: # FF0000;
+
+}
+
+</style>
+
+
+
+ 
+
+<body>
+
+<p class="solid1">Solid border 1</p>
+
+<p class="solid2">Solid</p>
+
+</body>
+
+Border Radius  Border radius helps create rounded borders for elements like buttons or images
+Now let’s apply border to our webpage
+
+
+Now let’s apply border to our webpage
+Box Model
+CSS Box Model
+ 
+
+The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+
+ 
+
+It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+
+ 
+
+The box model consists of four main components, which are
+ 
+
+1.  Content
+
+The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.
+
+ 
+
+The content area is defined by the width and height properties.
+
+ 
+
+2.  Padding
+
+The space between the actual content and the border of the element is the padding.
+
+
+
+ 
+
+ 
+
+3.  Border
+
+The border surrounds the content and padding and gives the visual border of the element.
+
+ 
+
+4.  Margin
+
+The margin is the space outside the element that separates it from other elements in the layout.
+
+ 
+
+ 
+
+Calculating the total dimension of the element
+ 
+
+The total width and height of the element is calculated with the formula:
+
+ 
+
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+ 
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+
+
+
+ 
+
+ 
+
+<head>
+<style> p{
+
+width: 200px; height: 300px; padding: 15px;
+
+border: 10px solid red; margin: 5px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p>Coder</p>
+
+</body>
+
+</html>
+
+Box Model
+Now lets try on our webpage
+
+
+Now lets try on our webpage
+Now lets try on our webpage
+
+
+Now lets try on our webpage
+CSS Properties Colors
+The color property of CSS helps to set the color of the HTML element(s). This helps to set the foreground color of text, text decorations, and borders.
+
+ 
+
+<head>
+
+<style> p{
+
+color: purple;
+
+}
+
+</style>
+
+</head>
+
+ 
+
+<body>
+
+<p>Hello World</p>
+
+<p>How are you</p>
+
+</body>
+
+ 
+
+</html>
+
+CSS Properties Colors
+Hexadecimal notation:
+The hex code consists of a hash(#) symbol followed by six characters. These six characters are arranged into a set of three pairs (RR, GG, and BB).
+
+Each character pair defines the intensity level of the colour, where R stands for red, G stands for green, and B stands for blue.
+
+The intensity value lies between 00 (no intensity) and ff (maximum intensity). Breaking the Character Set (RRGGBB):
+
+RR: RR defines the intensity of color red, ranging from 00 (no red) to FF (maximum red).
+GG: GG defines the intensity of color Green, with values from 00 (no green) to FF (full green).
+BB: GG defines the intensity of color Blue, varying from 00 (no blue) to FF (full blue).
+
+
+Syntax
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+seletor {
+
+color: #RRGGBB;
+
+}
+
+
+
+<head>
+
+ 
+
+<style> h1 {
+
+
+
+color: #FF0000;
+
+ 
+
+/*Pure Red*/
+
+ 
+
+}
+
+ 
+
+h2 {
+
+ 
+
+color: #00FF00;
+
+ 
+
+/* Pure Green */
+
+ 
+
+}
+
+ 
+
+h3 {
+
+ 
+
+color: #0000FF;
+
+ 
+
+/* Pure Blue */
+
+ 
+
+}
+
+ 
+
+h4 {
+
+ 
+
+color: #b700ff;
+
+ 
+
+/* Custom Color */
+
+ 
+
+}
+
+ 
+
+</style>
+
+ 
+
+</head>
+
+
+
+ 
+
+<body>
+
+ 
+
+<h1>Build code</h1>
+
+ 
+
+<h2>A Developer</h2>
+
+ 
+
+<h3>Error</h3>
+
+ 
+
+<h4>Hello World</h4>
+
+ 
+
+</body>
+
+ 
+
+</html>
+
+Hexadecimal notation:
+RGB
+RGB stands for “Red, Green, Blue,” and it defines the colour value by taking three (red, green, blue) arguments.
+
+Each argument value lies between 0 and 255.
+
+Syntax selector{
+
+color: rgb(red, green, blue);
+
+ 
+
+}
+
+
+
+<head>
+
+<style> h1 {
+
+
+
+color: rgb(0, 0, 0);
+
+
+
+/* red:0, green:0, blue:0 */
+
+}
+
+ 
+
+ 
+
+h2 {
+
+
+
+color: rgb(255, 255, 255);
+
+/* red:255, green:255, blue:255 */
+
+}
+
+ 
+
+ 
+
+h3 {
+
+
+
+color: rgb(30, 150, 220);
+
+}
+
+</style>
+
+</head>
+
+
+
+ 
+
+<body>
+
+<h1>Coder</h1>
+
+<h2>A Developer</h2>
+
+<h3>Code it down</h3>
+
+</body>
+
+ 
+
+ 
+
+</html>
+
+RGB
+Now lets apply these color to our web page
+
+
+Now lets apply these color to our web page
+CSS Display
+The display Property
+
+ 
+
+The display property is used to specify how an element is shown on a web page.
+ 
+
+Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline.
+
+ 
+
+The display property is used to change the default display behavior of HTML elements.
+
+
+
+ 
+
+Inline Elements
+
+ 
+
+An inline element DOES NOT start on a new line and only takes up as much width as necessary.
+
+ 
+
+This is an inline <span> element inside a paragraph. Examples of inline elements:
+
+<span>
+
+<a>
+
+<img>
+
+Display: none;
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+
+ 
+
+The <script> element uses display: none; as default.
+
+Display: none;
+Display: none;
+
+
+Display: none;
+CSS Fonts
+CSS Fonts
+
+ 
+
+Fonts play a crucial role in making your page visually appealing. Fonts decide how texts will look on the screen; depending on the website, different kinds of fonts are used.
+ 
+
+Let’s look at the major font attributes.
+
+ 
+
+Font Color
+
+ 
+
+Font color defines the colour of the text or typography. Syntax:
+
+selector{ color: red;
+
+}
+
+
+
+ 
+
+ 
+
+<head>
+
+<style>
+
+# p1 {
+
+font-size: small;
+
+}
+
+# p2 {
+
+font-size: medium;
+
+}
+
+# p3 {
+
+font-size: large;
+
+}
+
+# p4 {
+
+font-size: larger;
+
+}
+
+# p5 {
+
+font-size: 25px;
+
+}
+
+# p6 {
+
+font-size: 2em;
+
+}
+
+# p7 {
+
+font-size: 2rem;
+
+}
+
+# p8 {
+
+font-size: 50%;
+
+}
+
+</style>
+
+</head>
+
+
+
+ 
+
+<body>
+
+<p id="p1">font-size: small</p>
+
+<p id="p2">font-size: medium</p>
+
+
+
+<p id="p3">font-size: largr</p>
+
+<p id="p4">font-size: larger</p>
+
+<p id="p5">font-size: 25px</p>
+
+<p id="p6">font-size: 2em</p>
+
+<p id="p7">font-size: 2rem</p>
+
+<p id="p8">font-size: 50%</p>
+
+</body>
+
+CSS Fonts
+CSS Font Style
+The font style property sets the style of the font.
+
+ 
+
+There are three types of font styles: italic, normal, and oblique. Quick notes:
+
+italic: Italic texts are slightly to the right. normal: Default text style.
+
+Oblique: Oblique is similar to italic but has less bend
+
+ 
+
+<html lang="en">
+
+ 
+
+<head>
+
+<style>
+
+# p1 {
+
+font-style: italic;
+
+}
+
+# p2 {
+
+font-style: normal;
+
+}
+
+# p3 {
+
+font-style: oblique;
+
+}
+
+</style>
+
+</head>
+
+
+
+ 
+
+<body>
+
+<p id="p1">font-style: italic</p>
+
+<p id="p2">font-style: normal</p>
+
+<p id="p3">font-style: oblique</p>
+
+</body>
+
+</html>
+
+CSS Font Style
+CSS Font Variant
+The CSS font variant property helps to toggle with the variations of the text. There are two common values for the font-variant property.
+
+normal: The default value.
+
+small-caps: This value renders the text in small capital letters.
+
+ 
+
+<html lang="en">
+
+<head>
+
+<style>
+
+# p1 {
+
+font-variant: normal;
+
+}
+
+# p2 {
+
+font-variant: small-caps;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">font-variant: normal;</p>
+
+<p id="p2">font-variant: small-caps;</p>
+
+</body>
+
+</html>
+
+CSS Font Variant
+CSS Font Weight
+The font-weight property controls the thickness or boldness of the text.
+
+ 
+
+The values range from 100 (thin) to 900 (ultra-bold) and also have some predefined values such as lighter, bold, and bolder.
+
+ 
+
+<head>
+
+<style>
+
+# p1 {
+
+font-weight: 100;
+
+}
+
+# p2 {
+
+font-weight: 200;
+
+}
+
+# p3 {
+
+font-weight: 300;
+
+}
+
+# p4 {
+
+font-weight: 400;
+
+}
+
+# p5 {
+
+font-weight: 500;
+
+}
+
+# p6 {
+
+font-weight: 600;
+
+}
+
+# p7 {
+
+font-weight: 700;
+
+}
+
+# p8 {
+
+font-weight: 800;
+
+}
+
+# p9 {
+
+font-weight: 900;
+
+}
+
+# p10 {
+
+font-weight: lighter;
+
+}
+
+# p11 {
+
+font-weight: bold;                                                                                                                                                                                
+
+# p12 {
+
+
+
+ 
+
+<body>
+
+<p id="p1">font-weight: 100</p>
+
+<p id="p2">font-weight: 200</p>
+
+<p id="p3">font-weight: 300</p>
+
+<p id="p4">font-weight: 400</p>
+
+<p id="p5">font-weight: 500</p>
+
+<p id="p6">font-weight: 600</p>
+
+<p id="p7">font-weight: 700</p>
+
+<p id="p8">font-weight: 800</p>
+
+<p id="p9">font-weight: 900</p>
+
+<p id="p10">font-size: lighter</p>
+
+<p id="p11">font-size: bold</p>
+
+<p id="p12">font-size: bolder</p>
+
+</body>
+
+CSS Font Weight
+Font Family
+The font family property specifies the font stack. This is used to set the preferred font for the text  content.
+
+ 
+
+We can define multiple font family names separated by commas based on priority. Syntax:
+
+selector{
+
+font-family: font1, font2, font3;
+
+}
+
+
+
+ 
+
+<html lang="en">
+
+<head>
+
+<style> h1{
+
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+h2{
+
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Coder</h1>
+
+<h2>Hello World</h2>
+
+</body>
+
+</html>
+
+Font Family
+Let’s try it in our webpage
+
+
+Let’s try it in our webpage
+CSS Hover
+CSS Hover
+ 
+
+CSS hover is used to enhance the user experience. We can change the appearance or the behaviour of the HTML element(s) when the user hovers over it.
+
+Syntax: selector:hover{
+
+/* CSS rule(s) */;
+
+}
+
+<head>
+
+<style>
+
+# p1{
+
+color: yellow;
+
+}
+
+# p1:hover{ color: red;
+
+}
+
+# p2 {
+
+border: 2px solid red;
+
+}
+
+# p2:hover{
+
+border: 5px solid purple;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">Coders</p>
+
+<p id="p2">Develoments</p>
+
+</body>
+
+CSS Hover
+Now lets try in our webpage
+
+
+Now lets try in our webpage
+CSS Images
+Images are an essential part of the website. Images help enhance the website's look.
+
+ 
+
+Syntax to use for the CSS image:
+
+ 
+
+<img src="img_location" alt="alt_text">
+
+ 
+
+There are two attributes:
+
+  src: The path of the image.
+alt: Alternate text for the image, if the image is not displayed due to any issue.
+ 
+
+ 
+
+<html lang="en">
+
+<head>
+
+<title>CWH</title>
+
+</head>
+
+<body>
+
+<img src="./cwh.png" alt="cwh">
+
+</body>
+
+</html>
+
+CSS Images
+Image width and height
+There are two ways to specify the width and height of the image.
+
+Eg:
+
+<html lang="en">
+
+<head>
+
+<title>Document</title>
+
+</head>
+
+<body>
+
+<img src="./cwh.png" height="300" width="400" alt="cwh">
+
+</body>
+
+</html>
+
+Image width and height
+Image Border Radius
+Image border-radius helps create rounded corners for the image. Syntax:
+
+selector{
+
+border-radius: units;
+
+}
+
+Example:
+
+ 
+
+<html lang="en">
+
+<head>
+
+<title>Document</title>
+
+<style>
+
+img{
+
+border-radius: 25px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img src="./cwh.png" alt="cwh">
+
+</body>
+
+Image Border Radius
+Image Responsiveness
+Responsive images help to give a clear view of the image at different sizes of the screen. Syntax:
+
+selector{
+
+max-width: units; height: auto;
+
+}
+
+ 
+
+•       height: auto helps to achieve the responsive layout of the image.
+
+ 
+
+•       To play around with a responsive layout, follow the steps:
+
+ 
+
+•       right-click and click on inspect.
+
+•       Click on the toggle device toolbar (laptop mobile icon) or (ctrl + Shift + M).
+
+•       Change the dimensions and play around.
+
+fit-content
+The fit content specifies the size of that element, which should be determined by its content. Syntax:
+
+selector{
+
+width: fit-content;
+
+}
+
+We can also set the maximum width of the element. selector{
+
+width: fit-content(max or min width);
+
+}
+
+max-content
+The max-content property makes the element as wide as its content but not wider than the screen.
+
+
+
+ 
+
+Syntax:
+
+ 
+
+selector{
+
+width: max-content;
+
+}
+
+max-content
+Image Opacity
+Image opacity controls the transparency of the image. The property value ranges from 0 to 1. Syntax:
+
+img{
+
+opacity: unit;
+
+}
+
+Image Opacity
+Now let’s try in our webpage
+
+
+Now let’s try in our webpage
+CSS Margin
+CSS Margin
+
+ 
+
+The margin is the space outside the HTML element. It gives external spacing and differentiates two or more elements.
+ 
+
+Syntax:
+
+selector{ margin: value;
+
+}
+
+The margin value can be used in any of the following methods:
+
+Method 1
+
+selector{
+
+margin: value;
+
+}
+
+Here, the margin value will apply an equal margin to all sides (top, right, left, and bottom).
+
+Example:
+
+<html lang="en">
+
+<head>
+
+<style>
+
+# p1{
+
+border: 2px solid purple;
+
+}
+
+# p2 {
+
+margin: 12px;
+
+ 
+
+border: 2px solid red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">Coders (without margin)</p>
+
+<p id="p2">Coder (with margin)</p>
+
+</body>
+
+</html>
+
+CSS Margin
+Method 2
+selector{
+
+margin: value1 value2;
+
+}
+
+Here, value 1 is the vertical margin (y-axis), and value 2 is the horizontal margin (x-axis). 
+
+Example: 
+
+<html lang="en">
+
+<head>
+
+<style>
+
+# p1{
+
+border: 2px solid purple;
+
+}
+
+# p2 {
+
+margin: 20px 50px; border: 2px solid red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">Coders (without margin)</p>
+
+<p id="p2">Coder (with margin)</p>
+
+</body>
+
+ </html>
+
+Method 2
+Now let’s try on our webpage
+
+
+Now let’s try on our webpage
+CSS Padding
+CSS Padding
+
+ 
+
+Padding is the space between the HTML content and the border. It gives internal spacing and helps to enhance the website
+Syntax: selector{
+
+padding: value;
+}
+
+Padding value can be used in any of the following methods:
+
+ 
+
+Method 1
+
+ 
+
+selector{
+
+padding: value;
+
+}
+
+Here, the padding value will apply equal padding to all sides (top, right, left, and bottom).
+
+ 
+
+Example:
+
+ 
+
+<html lang="en">
+
+<head>
+
+<style>
+
+# p1{
+
+border: 2px solid purple;
+
+}
+
+# p2 {
+
+padding: 12px;
+
+border: 2px solid red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">Coders (without padding)</p>
+
+<p id="p2">Coder (with padding)</p>
+
+</body>
+
+</html>
+
+CSS Padding
+Now lets try in our webpage
+
+
+Now lets try in our webpage
+CSS Positioning
+CSS Positioning
+ 
+
+The CSS positions allow you to precisely control the placement of an element on the web  page.
+
+ 
+
+It helps to determine how elements are placed inside the container element and how they interact with the other elements on the page.
+
+ 
+
+There are various types of position property values, such as:
+
+ 
+
+Static(Default)
+ 
+
+The elements are positioned according to the normal flow of the document.
+
+ 
+
+Syntax:
+ 
+
+selector {
+
+position: static;
+
+}
+
+
+
+Example:
+ 
+
+<head>
+
+<style>
+
+img {
+
+position: static;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">Lorem ipsum dolor sit amet.</p>
+
+<p id="p2">Lorem ipsum dolor sit amet.</p>
+
+<img src=“./image.png” alt=“">
+
+<p id="p3">Lorem ipsum dolor sit amet.</p>
+
+<p id="p4">Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+</html>
+
+CSS Positioning
+Relative
+Relative
+ 
+
+Elements are positioned relative to the normal position in the document.
+
+ 
+
+You can use the top, right, bottom, and left properties to move the element from its original position.
+
+ 
+
+Syntax:
+ 
+
+selector {
+
+position: relative;
+
+}
+
+
+
+ 
+
+Example:
+ 
+
+<head>
+
+<style>
+
+img {
+
+position: relative; left: 100px;
+
+top: 50px
+
+}
+
+</style>
+
+</head>
+
+ 
+
+<body>
+
+<p id="p1">Lorem ipsum dolor sit amet.</p>
+
+<p id="p2">Lorem ipsum dolor sit amet.</p>
+
+<img src="./logo.png“ height=“150px” width=“200px”>
+
+<p id="p3">Lorem ipsum dolor sit amet.</p>
+
+<p id="p4">Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+<html>
+
+Relative
+Absolute
+Absolute
+ 
+
+Elements are positioned relative to the closest positioned ancestor (parent), which means we need to have a parent element with a positioning other than 'static'.
+
+ 
+
+Note: An absolutely positioned element is removed from the normal flow.
+
+
+
+Example:
+<style>
+
+.logo{
+
+position: relative; left: 200px;
+
+top: 70px;
+
+}
+
+ 
+
+# about{
+
+position: absolute; left: 100px;
+
+top: 100px;
+
+}
+
+</style>
+
+<body>
+
+<h1>Coders</h1>
+
+<div id="about">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+<div class="logo">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+</body>
+
+Absolute
+Fixed
+Fixed
+ 
+
+Elements are positioned relative to the viewport (screen) and do not move when the page is scrolled.
+
+ 
+
+This is useful for creating elements like fixed headers or footers.
+
+Example:
+<style>
+
+.logo{
+
+position: relative; left: 200px;
+
+top: 70px;
+
+}
+
+ 
+
+# about{
+
+position: absolute; left: 100px;
+
+top: 100px;
+
+}
+
+.image{ position: fixed; left: 300px;
+
+}
+
+</style>
+
+
+
+<body>
+
+<h1>Coders</h1>
+
+<div id="about">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+<div class="logo">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div class="image">
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+</body>
+
+Fixed
+Sticky
+Sticky
+ 
+
+Position sticky is a hybrid between 'relative' and 'fixed'.
+
+ 
+
+It allows an element to become "stuck" to the top or bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified offset.
+
+Example
+<style>
+
+.logo{
+
+position: sticky; left: 200px; top: 70px;
+
+}
+
+ 
+
+# about{
+
+position: absolute; left: 100px;
+
+top: 100px;
+
+}
+
+.image{ position: fixed; left: 300px;
+
+}
+
+Confide<nti/als?ty©2le024>EduSkills 
+
+<body>
+
+<h1>Coders</h1>
+
+<div id="about">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+<div class="logo">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div class="image">
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+</body>
+
+Sticky 
+Sticky
+
+
+Sticky
+CSS Text Styling
+Text Alignment
+ 
+
+The text alignment property is used to align the text within the container. Container can be a div, section, etc.
+
+ 
+
+Syntax:
+ 
+
+selector{
+
+text-align: value;
+
+}
+
+ 
+
+There are four values for text alignment:
+
+ 
+
+•         left: align the text to the left.
+
+ 
+
+•         centre: align the text to the centre.
+
+ 
+
+•         right: align the text to the right.
+
+ 
+
+•         justify: spread the text evenly between the left and right margins.
+
+
+
+ 
+
+ 
+
+Example:
+ 
+
+<html lang="en">
+
+<head>
+
+<style>
+
+# p1 {text-align: left;}
+
+# p2 {text-align: right;}
+
+# p3 {text-align: end;}
+
+# p4 {text-align: justify;}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">text-align: left</p>
+
+<p id="p2">text-align: right</p>
+
+<p id="p3">text-align: end</p>
+
+<p id="p4">text-align: justify</p>
+
+</body>
+
+</html>
+
+CSS Text Styling
+Line Height
+Line Height
+
+ 
+
+The line-height property controls the spacing between the two lines of text.
+
+<head>
+
+<style> h1{
+
+line-height: 3.5;
+
+}
+
+</style>
+
+</head>
+
+ 
+
+<body>
+
+<h1>Coder</h1>
+
+<h1>Development</h1>
+
+</body>
+
+
+
+Line Height
+Text Shadow
+selector{
+
+text-shadow: Horizontal offset, vertical offset, blur radius, color;
+
+}
+
+Example:
+
+ 
+
+<html lang="en">
+
+<head>
+
+<style> h1{
+
+text-shadow: 2px 3px 4px red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Coders</h1>
+
+</body>
+
+</html>
+
+Text Shadow
+Now, lets try in our webpage
+h1{
+
+color:black;
+
+background-color:steelblue; font-weight: bolder;
+
+border: 5px solid black; border-radius: 8px;
+
+font-family: monospace; text-align: center;
+
+text-shadow: 2px 3px 4px red;
+
+}
+
+ 
+
+<body>
+
+<h1>Fredie's Garage</h1>
+
+Now, lets try in our webpage
+CSS Flexbox
+FlexBox aka Flexible Box Layout makes it easier to layout, align and style items in the container while maintaining the responsiveness of the website.
+ 
+
+To create a flexbox you need to set the display of the container as flex Eg: {display: flex;}
+
+ 
+
+This element is called the flex container, and stores the sub-elements which are known as flex items
+
+ 
+
+Flex Container Properties
+
+ 
+
+The flex container properties are:
+
+ 
+
+1. Flex Direction
+
+ 
+
+It defines in which direction the flex elements would be displayed. It takes values like row, column or “reverse” too.
+
+ 
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device- width, initial-scale=1.0">
+
+<title>Document</title>
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display: flex;
+
+flex-direction: row;
+
+}
+
+</style>
+
+</head> 
+
+<body>
+
+<span class="flex-container">
+
+<div>
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+
+
+CSS Flexbox
+2. Flex Wrap
+By using this property we can make our elements responsive for different screen sizes. 
+
+Eg:
+
+
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div>
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+2.	Flex Wrap
+3.Justify Content
+This property is used to set the position of content or rather align content along the main axis.
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru; justify-content: center;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div>
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+
+
+It can take other values too like “space-around” which distributes flex items equally spaced in the container. Other properties include flex-end, flex-start, space-between, etc. (These could be seen in vs code when the justify-content property is selected).
+
+
+
+3.Justify Content
+4. Align Items
+Just like the justify-content property, align-items define the alignment of the flex container but along the cross-axis.
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru;
+
+/* justify-content: center; */ align-items: end;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div>
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div>
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+
+
+4.	Align Items
+5. Align Content
+This property is very similar to align item but here rather than the flex items, the content present in the item is selected for the property. 
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru; justify-content: center;
+
+/* align-items: end; */ align-content: center;
+
+}
+
+</style>
+
+5. Align Content
+Flex Items Properties
+The flex item properties are:
+
+ 
+
+1.         Order:
+
+ 
+
+As the name suggests, this property sets the order in which the flex items are shown.
+
+ 
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru; justify-content: center;
+
+/* align-items: end; */ align-content: center;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div style="order: 1;">
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="order: 3;">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="order: 2;">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+Flex Items Properties
+2.Flex Grow & Shrink
+Decides the relative size of flex items. By default, this property is zero and thus items have the same size.
+
+ 
+
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru; justify-content: center;
+
+/* align-items: end; */ align-content: center;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div style="order: 1;">
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="order: 3;">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="flex-grow: 2;">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
+2.Flex Grow & Shrink
+Now lets try in our webpage
+<style>
+
+.flex-container{ position: relative; left: 200px; display:flex;
+
+flex-direction: row; flex-wrap: wrap;
+
+background-color: peru; justify-content: center;
+
+/* align-items: end; */ align-content: center;
+
+}
+
+</style>
+
+<body>
+
+<span class="flex-container">
+
+<div style="order: 1;">
+
+<img src="./6847201.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="order: 3;">
+
+<img src="./6847263.jpg" height="150px" width="200px">
+
+</div>
+
+<div style="flex-grow: 2;">
+
+<img src="./Ford.jpg" height="150px" width="200px">
+
+</div>
+
+</span>
+
+</body>
+
