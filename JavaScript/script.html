@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 5;
+        var y = 10;
+        var z = x + y;
+        document.write("The sum of " + x + " and " + y + " is: " + z + "<br>");
+
+    </script>
+    <script> function msg(){
+
+    alert("hello! this is message");
+
+    }
+
+</script>
+
+<input type=button onclick=msg() value="call function"/>
+
+<script>
+
+function getcube(number){ alert(number*number*number);
+
+}
+
+</script>
+
+<form>
+
+<input type=button value=click onclick=getcube(4) />
+
+</form>
+
+<script>
+
+var arr = [7, 5, 9, 1];
+
+var max = Math.max.apply(null, arr); document.writeln(max);
+
+</script>
+
+
+<script type="text/javascript"> function printvalue(){
+
+var name=document.form1.name.value;
+
+alert("Welcome: "+name);
+
+}
+
+</script>
+
+ 
+
+<form name="form1">
+
+ 
+
+Enter Name:<input type="text" name="name"/>
+
+<input type="button" onclick="printvalue()" value="print name"/>
+
+</form>
+
+    
+</body>
+</html>

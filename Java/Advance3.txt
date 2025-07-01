@@ -1,0 +1,165 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+46%
+
+Java Server Faces Framework
+Java Server Faces Framework
+JSF stands for Java Server Faces. It is a server-side Java framework for web development. Our JSF tutorial includes all topics of JSF such as features, example, validation, bean validation, managed bean, referencing managed bean method, facelets etc.
+
+Java Server Faces
+• JSF stands for Java Server Faces. It is a server-side Java framework for web development.
+
+
+
+• Our JSF tutorial includes all topics of JSF such as features, example, validation, bean validation, managed bean, referencing managed bean method, facelets etc.
+
+
+
+It is a server side component based user interface framework. It is used to develop web applications. It provides a well-defined programming model and consists of rich API and tag libraries. The latest version JSF 2 uses Facelets as its default templating system. It is written in Java.
+
+
+The JSF API provides components (inputText, commandButton etc) and helps to manage their states. It also provides server-side validation, data conversion, defining page navigation, provides extensibility, supports for internationalization, accessibility etc.
+
+
+The JSF Tag libraries are used to add components on the web pages and connect components with objects on the server. It also contains tag handlers that implements the component tag.
+
+
+With the help of these features and tools, you can easily and effortlessly create server-side user interface.
+Benefits of JSF
+• It provides clean and clear separation between behavior and presentation of web application. You can write business logic and user interface separately.
+
+
+
+JavaServer Faces API?s are layered directly on top of the Servlet API. Which enables several various application use cases, such as using different presentation technologies, creating your own custom components directly from the component classes.
+
+
+
+Including of Facelets technology in JavaServer Faces 2.0, provides massive advantages to it. Facelets is now the preferred presentation technology for building JavaServer Faces based web applications.
+
+
+
+
+
+• Prerequisites
+
+
+
+• Java: You must have Java 7 or higher version.
+
+
+
+• Java IDE: In this tutorial, we have used NetBean IDE 8.2. Although you can also use other Java IDEs.
+
+
+
+• Server: We did not install server seperatly. All the examples are executed on the default server installed along with NetBeans IDE 8.2.
+
+JSF FEATURES
+• Component Based Framework
+
+• Implements Facelets Technology
+
+• Integration with Expression Language
+
+• Support HTML5
+
+• Ease and Rapid web Development.
+
+• Support Internationalization
+
+• Bean Annotations
+
+• Default Exception Handling
+
+• Templating
+
+• Inbuilt AJAX Support
+
+• Security
+
+FACELETS TECHNOLOGY
+Facelets is an open source Web template system. It is a default view handler technology for JavaServer Faces (JSF). The language requires valid input XML documents to work. Facelets supports all of the JSF UI components and focuses completely on building the view for a JSF application.
+
+EXPRESSION LANGUAGE
+Expression Language provides an important mechanism for creating the user interface (web pages) to communicate with the application logic (managed beans). The EL represents a union of the expression languages offered by JavaServer Faces technology.
+
+
+
+JAVA SERVER FACES LIFECYCLE
+JavaServer Faces application framework manages lifecycle phases automatically for simple applications and also allows you to manage that manually. The lifecycle of a JavaServer Faces application begins when the client makes an HTTP request for a page and ends when the server responds with the page. 
+
+
+
+• The JSF lifecycle is divided into two main phases:
+
+• Execute Phase
+
+• Render Phase
+
+EXECUTE PHASE
+In execute phase, when first request is made, application view is built or restored. For other subsequent requests other actions are performed like request parameter values are applied, conversions and validations are performed for component values, managed beans are updated with component values and application logic is invoked.
+
+
+
+The execute phase is further divided into following subphases.
+
+• Restore View Phase
+
+• Apply Request Values Phase
+
+• Process Validations Phase
+
+• Update Model Values Phase
+
+• Invoke Application Phase
+
+• Render Response Phase
+
+
+
+RESTORE VIEW PHASE
+When a client requests for a JavaServer Faces page, the JavaServer Faces implementation begins the restore view phase. In this phase, JSF builds the view of the requested page, wires event handlers and validators to components in the view and saves the view in the FacesContext instance.
+
+
+
+If the request for the page is a postback, a view corresponding to this page already exists in the FacesContext instance. During this phase, the JavaServer Faces implementation restores the view by using the state information saved on the client or the server.
+
+APPLY REQUESTS VALUE PHASE
+In this phase, component tree is restored during a postback request. Component tree is a collection of form elements.Each component in the tree extracts its new value from the request parameters by using its decode (processDecodes()) method. After that value is stored locally on each component.
+
+
+
+If any decode methods or event listeners have called the renderResponse method on the current FacesContext instance, the JavaServer Faces implementation skips to the Render Response phase.
+
+
+
+If any events have been queued during this phase, the JavaServer Faces implementation broadcasts the events to interested listeners.
+
+
+
+If the application needs to redirect to a different web application resource or generate a response that does not contain any JavaServer Faces components, it can call the FacesContext.responseComplete() method.
+
+Process Validations phase
+In this phase, the JavaServer Faces processes all validators registered on the components by using its validate () method. It examines the component attributes that specify the rules for the validation and compares these rules to the local value stored for the component. The JavaServer Faces also completes conversions for input components that do not have the immediate attribute set to true.
+
+
+
+If any validate methods or event listeners have called the renderResponse method on the current FacesContext, the JavaServer Faces implementation skips to the Render Response phase.
+
+
+
+If the application needs to redirect to a different web application resource or generate a response that does not contain any JavaServer Faces components, it can call the FacesContext.responseComplete method.
+
+
+
+4s

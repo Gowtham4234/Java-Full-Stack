@@ -1,0 +1,1496 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+23%
+
+JavaScript
+JavaScript
+JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity. Although, JavaScript has no connectivity with Java programming language. The name was suggested and provided in the times when Java was gaining popularity in the market. In addition to web browsers, databases such as CouchDB and MongoDB uses JavaScript as their scripting and query language.
+
+Features of JavaScript
+There are following features of JavaScript:
+
+ 
+
+1.       All popular web browsers support JavaScript as they provide built-in execution environments.
+
+2.       JavaScript follows the syntax and structure of the C programming
+
+language. Thus, it is a structured programming language.
+
+3.       JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).
+
+4.       JavaScript is an object-oriented programming language that uses
+
+prototypes rather than using classes for inheritance.
+
+5.       It is a light-weighted and interpreted language.
+
+6.       It is a case-sensitive language.
+
+7.       JavaScript is supportable in several operating systems including, Windows, macOS, etc.
+
+It provides good control to the users over the web browsers
+
+Application of JavaScript
+JavaScript is used to create interactive websites. It is mainly used for:
+
+ 
+
+1. Client-side validation,
+
+2. Dynamic drop-down menus,
+
+3. Displaying date and time,
+
+4. Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+
+Displaying clocks etc
+
+JavaScript Comment
+JavaScript comments
+
+ 
+
+1.  Advantage of javaScript comments
+
+2. Single-line and Multi-line comments
+
+3. The JavaScript comments are meaningful way to deliver message. It is used to add information about the code, warnings or suggestions so that end user can easily interpret the code.
+
+ 
+
+The JavaScript comment is ignored by the JavaScript engine i.e. embedded in the browser
+
+Advantages of JavaScript comments
+There are mainly two advantages of JavaScript comments.
+
+ 
+
+1. To make code easy to understand It can be used to elaborate the code so that end user can easily understand the code.
+
+ 
+
+To avoid the unnecessary code It can also be used to avoid the code being executed. Sometimes, we add the code to perform some action. But after sometime, there may be need to disable the code. In such case, it is better to use comments
+
+JavaScript Variable
+1. JavaScript variable
+
+2.  JavaScript Local variable
+
+3.  JavaScript Global variable
+
+ 
+
+A JavaScript variable is simply a name of storage location. The actual value of a variable can be changed at any time. Variables are helpful in various situations such as:
+
+ 
+
+Variables as Placeholders for unknown values: They can be used in places where the values they represent are unknown when the code is written.
+
+ 
+
+Variables as Code Clarifies: They can make the purpose of your code cleaner.
+
+Rules of naming variables in JavaScript
+There are some rules while declaring a JavaScript variable (also known as identifiers).
+
+ 
+
+1. Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
+
+ 
+
+2.  After first letter we can use digits (0 to 9), for example value1.
+
+ 
+
+3. JavaScript variables are case sensitive, for example x and X are different variables.
+
+ 
+
+Naming Variables: Before starting to name variables, you should need to aware of JavaScript's naming rules. The factors you need to consider when selecting variable names are case sensitivity, invalid characters and the reserved words used in JavaScript.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1. Using Case in Variables: In JavaScript variables are case-sensitive. For Example: "total" and "TOTAL" have different meanings in JavaScript.
+
+ 
+
+2.If you are using a variable name that consists of only a word, it is make sure that easier way to use lowercase letters.
+
+ 
+
+3. If you are using a variable name with two words such as "total count". It's better to capitalize the first letter of the word. For example. "Total_Count", etc.
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4. Allowed special characters: An important rule to remember is that variable name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign. For example: "_totalpay", Total_Count etc.
+
+ 
+
+After the first letter, we can use digits (0 to 9), for example: "value1".
+
+ 
+
+5. Avoiding Reserved Words: When naming variables in JavaScript avoid the use of the reserved word. For example: "if", "case" etc.
+
+Declaring Variables
+To declare text as a variable, you can use the "var" or "let" keyword. The Following syntax is used for declaring a variable in JavaScript:
+
+ 
+
+Syntax:
+ 
+
+var variable_name;
+
+ 
+
+In the above syntax, "var" is a keyword and "variable_name" is a name given to a variable.
+
+
+ 
+
+var total_amount;
+ 
+
+In the above example, "var" is a keyword and "total_amount" is a variable name.
+
+ 
+
+Assign Value to Variables:
+ 
+
+For assigning a value to a variable, you can use the JavaScript assignment operator (=).
+
+ 
+
+Syntax:
+ 
+
+var variable_name = value;
+
+ 
+
+In the above syntax, "var" is a keyword, "variable_name" is a name given to a variable and value is used to assign a value to a variable.
+
+
+
+ 
+
+var total_amount = 500;
+
+ 
+
+In the above example, "var" is a keyword, "total_amount" is a variable name and 500 is a value assigned to a variable.
+
+ 
+
+Correct JavaScript variables
+ 
+
+var x = 10;
+
+var _value="sonoo";
+
+ 
+
+Incorrect JavaScript variables
+ 
+
+var 123=30; var *aa=320;
+
+
+
+ 
+
+ 
+
+Let's see a simple example of JavaScript variable.
+
+ 
+
+<script>
+
+
+
+var x = 10; var y = 20; var z=x+y;
+
+document.write(z);
+
+</script>
+
+Declaring Variables
+null
+Types of variables
+There are two types of variables in JavaScript:
+
+ 
+
+1.  Local variable
+
+2.  Global variable
+
+ 
+
+JavaScript local variable
+ 
+
+A JavaScript local variable is declared inside block or function. It is accessible within the function or block only. For example:
+
+ 
+
+<script> function abc(){
+
+var x=10;//local variable
+
+}
+
+</script>
+
+
+
+ 
+
+ 
+
+A JavaScript global variable is accessible from any function. A variable i.e. declared outside the function or declared with window object is known as global variable.
+
+ 
+
+For example:
+
+ 
+
+<script>
+
+var data=200;//gloabal variable function a(){ document.writeln(data);
+
+}
+
+function b(){ document.writeln(data);
+
+}
+
+a();//calling JavaScript function b();
+
+ 
+
+</script>
+
+Types of variables
+Javascript Data Types
+JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+ 
+
+1.Primitive data type
+
+2.Non-primitive (reference) data type
+
+ 
+
+JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc.
+
+ 
+
+For example:
+ 
+
+var a=40;//holding number var b="Rahul";//holding string
+
+JavaScript primitive data types
+There are five types of primitive data types in JavaScript. They are as follows.
+JavaScript primitive data types
+null
+JavaScript non-primitive data types
+The non-primitive data types are as follows:
+
+JavaScript non-primitive data types
+null
+JavaScript Operators
+JavaScript operators are symbols that are used to perform operations on operands. For example:
+
+ 
+
+var sum=10+20;
+
+Here, + is the arithmetic operator and = is the assignment operator.
+
+
+
+There are following types of operators in JavaScript.
+ 
+
+1.  Arithmetic Operators
+
+2.  Comparison (Relational) Operators
+
+3.  Bitwise Operators
+
+4.   Logical Operators
+
+5.   Assignment Operators
+
+6.  Special Operators
+
+JavaScript Arithmetic Operators
+Arithmetic operators are used to perform arithmetic operations on the operands. The following operators are known as JavaScript arithmetic operators.
+JavaScript Arithmetic Operators
+null
+JavaScript Comparison Operators
+The JavaScript comparison operator compares the two operands. The comparison operators are as follows.
+
+JavaScript Comparison Operators
+null
+JavaScript Assignment Operators
+The following operators are known as JavaScript assignment operators.
+JavaScript Assignment Operators
+null
+JavaScript If-else
+The JavaScript if-else statement is used to execute the code whether condition is true or false. There are three forms of if statement in JavaScript.
+
+ 
+
+If Statement
+If else statement if else if statement
+
+ 
+
+JavaScript If statement
+
+ 
+
+It evaluates the content only if expression is true. The signature of JavaScript if statement is given below
+
+
+
+Let’s see the example of if-else statement in JavaScript to find out the even or odd number.
+ 
+
+<script> var a=20;
+
+if(a%2==0){
+
+document.write("a is even number");
+
+}
+
+else{
+
+document.write("a is odd number");
+
+}
+
+</script>
+
+JavaScript If-else
+null
+Let’s see the example of if-else statement in JavaScript to find out the even or odd number
+<script> var a=20; if(a%2==0){
+
+document.write("a is even number");
+
+}
+
+else{
+
+document.write("a is odd number");
+
+}
+
+</script>
+
+Let’s see the example of if-else statement in JavaScript to find out the even or odd number
+JavaScript If...else if statement
+It evaluates the content only if expression is true from several expressions. The signature of JavaScript if else if statement is given below.
+
+ 
+
+<script>
+
+
+
+var a=20; if(a==10){
+
+document.write("a is equal to 10");
+
+}
+
+else if(a==15){
+
+document.write("a is equal to 15");
+
+}
+
+else if(a==20){
+
+document.write("a is equal to 20");
+
+}
+
+else{
+
+document.write("a is not equal to 10, 15 or 20");
+
+}
+
+</script>
+
+JavaScript If...else if statement
+null
+JavaScript Switch
+What is Switch Case in JavaScript?
+
+ 
+
+In JavaScript, a switch case is a conditional statement that is used so it can provide a way to execute the statements based on their conditions or different conditions.
+
+ 
+
+A switch case statement is used to perform different actions based on the conditions that are present in the program or given by the user.
+
+ 
+
+In other words, a switch statement evaluates the condition to match the condition with the series of cases and if the condition is matched then it executes the statement. If the condition is not matched with any case then the default condition will be executed.
+
+
+
+Syntax
+ 
+
+Let's see the syntax of the Switch case statement in JavaScript:
+
+ 
+
+switch (expression){ case value1:
+
+Code to be executed; break;
+
+Case value2:
+
+code to be executed; break;
+
+.........
+
+default:
+
+Code to be executed if the above values are not matched;
+
+}
+
+Break Statement & Default Statement
+Break Statement
+ 
+
+In JavaScript, a break keyword is used within the switch case statement this statement indicates the end of a particular case of the switch statement. In a switch statement if a break statement is out then the interpreter would continue executing each of the statements in each following case.
+
+ 
+
+Default Statement
+ 
+
+In JavaScript, a default keyword is used in a switch statement to define the default expression. In JavaScript, when any case doesn't match with the expression of the switch-case statement then it will execute the default code block.
+
+
+
+Example
+
+Let's take a simple program of a switch case statement in JavaScript: const expression = 'Apple';
+
+switch (expression){ case 'Oranges':
+
+console.log('I prefer Oranges'); break;
+
+case 'watermelons':
+
+console.log('I prefer watermelon too!'); break;
+
+case 'Apple':
+
+console.log('One apple a day keeps the doctor away); break;
+
+default:
+
+console.log(`Sorry, we are out of ${expression}`);
+
+}
+
+JavaScript Loops
+The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops. It makes the code compact. It is mostly used in array. It is also called iterative statements.
+
+ 
+
+Advantages of using Loop:
+ 
+
+It perform repetitive task with less number of codes. There are four types of loops in JavaScript.
+
+1) JavaScript For loop
+ 
+
+The JavaScript for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known. It executes a block of code until a specified condition is true.
+
+
+
+for (initialization; condition; increment)
+{
+
+code to be executed
+
+}
+
+ 
+
+ 
+
+In the above syntax:
+
+ 
+
+1.       Initialize: This is an expression that starts the loop.
+
+2.       condition: This is a Boolean expression that specifies whether the loop should execute a loop or not.
+
+3.       Increment/Decrement: Executes the iterate (i.e. increment and
+
+decrement) after each iteration of the for loop statement.
+
+
+
+Let's see the simple example of for loop in javascript.
+ 
+
+<script>
+
+for (i=1; i<=5; i++)
+
+{
+
+document.write(i + "<br/>")
+
+}
+
+</script>
+
+JavaScript Loops
+null
+2) JavaScript while loop
+The JavaScript while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known. In the while loop, the condition is first checked and if it evaluates to TRUE, the statements inside the curly braces are executed.
+
+ 
+
+while (condition)
+{
+
+code to be executed
+
+}
+
+ 
+
+ 
+
+In the above syntax, condition is any valid test expression that may use logical operator that is enclosed within parenthesis.
+
+
+
+Let's see the simple example of while loop in javascript.
+<script> var i=11;
+
+while (i<=15)
+
+{
+
+document.write(i + "<br/>"); i++;
+
+}
+
+</script>
+
+2)	JavaScript while loop
+null
+3)JavaScript do while loop
+The JavaScript do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. It is also called an exit controlled looping statement because the test condition is checked at the end of the do- while loop and hence the body is executed unconditionally for the first time.
+
+The syntax of do while loop is given below. do{
+code to be executed
+
+}while (condition);
+
+
+
+<script> var i=21; do{
+
+document.write(i + "<br/>"); i++;
+
+}while (i<=25);
+
+</script>
+
+3)JavaScript do while loop
+null
+JavaScript Functions
+JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code.
+
+ 
+
+Advantage of JavaScript function
+ 
+
+Functions are useful in organizing the different parts of a script into the several tasks that must be completed. There are mainly two advantages of JavaScript functions.
+
+ 
+
+1.       Code reusability: We can call a function several times in a script to perform their tasks so it saves coding.
+
+2.       Less coding: It makes our program compact. We don't need to write many lines of code each time to perform a common task.
+
+
+
+
+
+Rules for naming functions:
+ 
+
+1.        It must be case sensitive.
+
+2.        It must be start with alphabetical character (A-Z) or an underscore symbol.
+
+3.        It cannot contain spaces.
+
+4.        It cannot be use as a reserve words.
+
+ 
+
+How to declare a Function:
+
+ 
+
+To declare a function we have to use the reserved keyword "function", followed by its name, and a set of arguments.
+
+
+
+
+
+JavaScript Function Example
+
+ 
+
+Let's see the simple example of function in JavaScript that does not has arguments.
+
+ 
+
+<script> function msg(){
+
+alert("hello! this is message");
+
+}
+
+</script>
+
+<input type=button onclick=msg() value="call function"/>
+
+JavaScript Functions
+null
+JavaScript Function Arguments
+We can call function by passing arguments. Let's see the example of function that has one argument.
+
+ 
+
+<script>
+
+function getcube(number){ alert(number*number*number);
+
+}
+
+</script>
+
+<form>
+
+<input type=button value=click onclick=getcube(4) />
+
+</form>
+
+JavaScript Function Arguments
+null
+Function methods
+
+
+Function methods
+null
+JavaScript Function apply() method
+The JavaScript Function apply() method is used to call a function contains this value and an argument contains elements of an array.
+
+ 
+
+Unlike call() method, it contains the single array of arguments.
+
+
+
+Syntax
+ 
+
+function.apply(thisArg, [array])
+
+ 
+
+Parameter
+
+ 
+
+1.        thisArg - It is optional. The this value is given for the call to a function.
+
+ 
+
+2.        array - It is optional. It is an array-like object.
+
+ 
+
+Return Value
+
+ 
+
+It returns the result of the calling function along provided this value and arguments.
+
+
+
+JavaScript Function apply() method Example
+
+ 
+
+Example 1
+
+ 
+
+Let's see an example to determine the maximum element.
+
+ 
+
+<script>
+
+var arr = [7, 5, 9, 1];
+
+var max = Math.max.apply(null, arr); document.writeln(max);
+
+</script>
+
+JavaScript Function apply() method
+null
+Example 2
+Let's see an example to determine the minimum element.
+
+ 
+
+<script>
+
+var arr = [7, 5, 9, 1];
+
+var min = Math.min.apply(null, arr); document.writeln(min);
+
+</script>
+
+Example 2
+null
+Document Object Model
+Document Object Model
+
+ 
+
+The document object represents the whole html document.
+
+ 
+
+When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to our web page.
+
+
+
+ 
+
+Properties of document object
+ 
+
+Let's see the properties of document object that can be accessed and modified by the document object
+
+Document Object Model
+null
+Methods of document object
+We can access and change the contents of document by its methods.
+
+Methods of document object
+null
+Accessing field value by document object
+In this example, we are going to get the value of input text by user. Here, we are using document.form1.name.value to get the value of name field.
+
+ 
+
+ 
+
+Here, document is the root element that represents the html document.
+
+ 
+
+1. form1 is the name of the form.
+
+ 
+
+ 
+
+2.  name is the attribute name of the input text.
+
+ 
+
+3.  value is the property, that returns the value of the input text.
+
+ 
+
+Let's see the simple example of document object that prints name with welcome message.
+
+
+
+ 
+
+
+
+<script type="text/javascript"> function printvalue(){
+
+var name=document.form1.name.value;
+
+alert("Welcome: "+name);
+
+}
+
+</script>
+
+ 
+
+<form name="form1">
+
+ 
+
+Enter Name:<input type="text" name="name"/>
+
+<input type="button" onclick="printvalue()" value="print name"/>
+
+</form>
+
+Accessing field value by document object
+null
+Javascript - document.getElementById() method
+getElementById() method
+Example of getElementById()
+
+The document.getElementById() method returns the element of specified id.
+
+ 
+
+In the previous page, we have used document.form1.name.value to get the value of the input value. Instead of this, we can use document.getElementById() method to get value of the input text. But we need to define id for the input field.
+
+ 
+
+Let's see the simple example of document.getElementById() method that prints cube of the given number.
+
+
+
+<script type="text/javascript">
+
+ 
+
+function getcube(){
+
+var number=document.getElementById("number").value; alert(number*number*number);
+
+}
+
+</script>
+
+<form>
+
+Enter No:<input type="text" id="number" name="number"/><br/>
+
+<input type="button" value="cube" onclick="getcube()"/>
+
+</form>
+
+Javascript - document.getElementById() method 
+null
+GetElementsByClassName()
+The getElementsByClassName() method is used for selecting or getting the elements through their class name value. This DOM method returns an array-like object that consists of all the elements having the specified classname.
+
+ 
+
+On calling the getElementsByClassName() method on any particular element, it will search the whole document and will return only those elements which match the specified or given class name.
+
+
+
+Syntax
+ 
+
+var ele=document.getELementsByClassName('name');
+
+ 
+
+Here, name is the mandatory argument to be passed. It is the string that specifies either a single classname or multiple class names to match.
+
+ 
+
+Example of getElementsByClassName() Method
+ 
+
+Let's look at some examples to know and understand the practical implementation of the method.
+
+
+
+Example
+
+ 
+
+<html>
+
+<head> <h5>DOM Methods </h5> </head>
+
+<body>
+
+<div class="Class">
+
+This is a simple class implementation
+
+</div>
+
+<script type="text/javascript">
+
+var x=document.getElementsByClassName('Class'); document.write("On calling x, it will return an arrsy-like object: <br>"+x);
+
+</script>
+
+</body>
+
+</html>
+
+GetElementsByClassName()
+null
+Difference between getElementsByClassName(), querySelector() and querySelectorAll() Methods
+getElementsByClassName(): It matches the elements with the specified class name, and returns a set of the matched elements. The returned elements are live HTML collection of elements. These live elements can be further updated if any changes are made in the Document Object Model.
+
+ 
+
+querySelector(): It returns only a single element that matches the specified classname. If it does not find any matching element, it returns null.
+
+ 
+
+The main point to understand is that all the above-described methods return either one element or a list, but the getELementsByClassName() method serves the dynamic updation, and the other two methods serve for the static.
+
+
+Javascript - document.getElementsByName() method
+
+ 
+
+getElementsByName() method
+
+ 
+
+Example of getElementsByName()
+ 
+
+The document.getElementsByName() method returns all the element of specified name.
+
+ 
+
+The syntax of the getElementsByName() method is given below:
+ 
+
+document.getElementsByName("name")
+
+
+
+ 
+
+Example of document.getElementsByName() method
+
+ 
+
+In this example, we going to count total number of genders. Here, we are using getElementsByName() method to get all the genders.
+
+<script type="text/javascript"> function totalelements()
+
+{
+
+var allgenders=document.getElementsByName("gender"); alert("Total Genders:"+allgenders.length);
+
+}
+
+</script>
+
+<form>
+
+Male:<input type="radio" name="gender" value="male"> Female:<input type="radio" name="gender" value="female">
+
+ 
+
+<input type="button" onclick="totalelements()" value="Total Genders">
+
+</form>
+
+Difference between getElementsByClassName(), querySelector() and querySelectorAll() Methods
+null
+Example of document.getElementsByTagName() method
+In this example, we going to count total number of paragraphs used in the document. To do this, we have called document.getElementsByTagName("p") method that returns the total paragraphs.
+
+
+
+<script type="text/javascript"> function countpara(){
+
+var totalpara=document.getElementsByTagName("p"); alert("total p tags are: "+totalpara.length);
+
+ 
+
+}
+
+</script>
+
+<p>This is a pragraph</p>
+
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>
+
+<p>Let's see the simple example</p>
+
+<button onclick="countpara()">count paragraph</button>
+
+Example of document.getElementsByTagName() method
+null
+Javascript – innerHTML
+javascript innerHTML
+
+Example of innerHTML property
+The innerHTML property can be used to write the dynamic html on the html document.
+
+ 
+
+It is used mostly in the web pages to generate the dynamic html such as registration form, comment form, links etc
+
+Form validation
+Here, we are validating the form on form submit. The user will not be forwarded to the next page until given values are correct.
+
+ 
+
+Lets learn with a small example
+
+
+
+ 
+
+<script>
+
+
+
+function validateform(){
+
+var name=document.myform.name.value;
+
+var password=document.myform.password.value;
+
+ 
+
+if (name==null || name==""){ alert("Name can't be blank"); return false;
+
+}else if(password.length<6){
+
+alert("Password must be at least 6 characters long."); return false;
+
+}
+
+}
+
+</script>
+
+ 
+
+<body>
+
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" > Name: <input type="text" name="name"><br/>
+
+Password: <input type="password" name="password"><br/>
+
+<input type="submit" value="register">
+
+</form>
+
+Form validation
+null
+Form you have to validate now
+
+
+Form you have to validate now
+null
+Now you have to create a form and validate the fields
+code snippet is initializing a set of validators for email, password, and name inputs, with each validator checking specific conditions for validity. Here's a breakdown of the logic
+
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></scr ipt>
+
+<script>
+
+// Optimized validation functions const VALIDATORS = {
+
+email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), password: (value) => value.length >= 6,
+
+name: (value) => value.trim().length >= 2,
+
+};
+
+
+
+ 
+
+1.  Bootstrap Script html
+
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></scri pt>
+
+ 
+
+This script loads the Bootstrap JavaScript bundle, including features such as modals, tooltips, and dropdowns. It enables interactive Bootstrap components.
+
+ 
+
+2.  Validation Functions javascript
+
+ 
+
+const VALIDATORS = { email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), password: (value) => value.length >= 6,
+
+name: (value) => value.trim().length >= 2,};
+
+ 
+
+a)      email: Validates an email address format using a regular expression.
+
+b)      Checks that the value contains a valid structure like example@domain.com.password: Ensures the password is at least 6 characters long.
+
+c)       name: Ensures the name is at least 2 characters long after trimming spaces.
+
+
+
+ 
+
+Now you have to create a form and validate the fields
+null
+Password visibility toggle function
+function togglePassword(inputId, toggleIconId) {
+
+const input = document.getElementById(inputId); const icon = document.getElementById(toggleIconId);
+
+ 
+
+if (input.type === "password") { input.type = "text";
+
+icon.classList.replace("bi-eye", "bi-eye-slash");
+
+} else {
+
+input.type = "password"; icon.classList.replace("bi-eye-slash", "bi-eye");
+
+}
+
+}
+
+
+
+This function, togglePassword, is a user-friendly utility to show or hide password input fields dynamically. It toggles the input type between "password" and "text" and updates the icon accordingly.
+
+ 
+
+How It Works Parameters :
+
+ 
+
+1.         input Id: The id of the password input field.
+
+ 
+
+
+
+2.         toggleIconId : The id of the icon used for toggling (e.g., an eye icon).
+
+ 
+
+Logic:Check the Input Type:
+
+ 
+
+1.         If the input type is "password", change it to "text" (show password).
+
+ 
+
+2.         If the input type is "text", change it back to "password" (hide password).
+
+ 
+
+3.         Update the Icon:Replace bi-eye (show icon) with bi-eye-slash (hide icon) or vice versa.
+
+
+
+
+
+3. Bootstrap Icons:It assumes you are using Bootstrap Icons (classes like bi-eye and bi- eye-slash).
+
+Password visibility toggle function
+null
+Error handling functions
+The showError and hideError functions are useful utilities for managing form validation feedback. They provide visual cues (e.g., styling and error messages) to inform users of input errors and help ensure the form is filled out correctly.
+
+ 
+
+How the Functions Work show ErrorAdds the is-invalid class to the input element, typically styled by frameworks like Bootstrap to display validation errors.
+ 
+
+Makes the associated error message visible by setting its display property to "block".
+
+ 
+
+hideErrorRemoves the is-invalid class from the input element to clear the error styling. Hides the associated error message by setting its display property to "none".
+
+
+
+function showError(element, errorElement) { element.classList.add("is-invalid"); errorElement.style.display = "block";
+
+}
+
+ 
+
+function hideError(element, errorElement) { element.classList.remove("is-invalid"); errorElement.style.display = "none";
+
+}
+
+Error handling functions
+null
+For form validation
+// Form validation function
+
+function validateField(element, errorElement, validatorFn) { if (!validatorFn(element.value)) {
+
+showError(element, errorElement); return false;
+
+}
+
+hideError(element, errorElement); return true;
+
+}
+
+How It Works Parameters:
+1.       element: The input element to validate.errorElement: The element where the error message will be displayed.
+
+2.       validatorFn: A validation function that checks the validity of the field's value.
+
+
+
+It should return true for valid input and false for invalid input
+
+Now for login validation
+const loginForm = document.getElementById("loginForm"); loginForm.addEventListener("submit", function (e) { e.preventDefault();
+
+let isValid = true;
+
+ 
+
+const email = document.getElementById("loginEmail");
+
+const password = document.getElementById("loginPassword");
+
+ 
+
+isValid = validateField( email,
+
+document.getElementById("loginEmailError"), VALIDATORS.email
+
+
+
+ 
+
+ 
+
+) && isValid;
+
+isValid = validateField( password,
+
+document.getElementById("loginPasswordError"), VALIDATORS.password
+
+) && isValid;
+
+ 
+
+if (isValid) {
+
+// Here you would typically send the data to your server alert("Login successful!");
+
+bootstrap.Modal.getInstance( document.getElementById("loginModal")
+
+).hide();
+
+this.reset();
+
+}
+
+});
+
+For registration validation
+const registerForm = document.getElementById("registerForm"); registerForm.addEventListener("submit", function (e) { e.preventDefault();
+
+let isValid = true;
+
+ 
+
+const name = document.getElementById("registerName"); const email = document.getElementById("registerEmail");
+
+const password = document.getElementById("registerPassword");
+
+const confirmPassword = document.getElementById("confirmPassword");
+
+isValid =
+
+validateField( name,
+
+document.getElementById("registerNameError"), VALIDATORS.name
+
+) && isValid; isValid = validateField(
+
+email, document.getElementById("registerEmailError"), VALIDATORS.email
+
+) && isValid; isValid = validateField(
+
+password, document.getElementById("registerPasswordError"), VALIDATORS.password
+
+) && isValid;
+
+Special validation for password confirmation
+if (password.value !== confirmPassword.value) { showError(
+
+confirmPassword, document.getElementById("confirmPasswordError")
+
+);
+
+isValid = false;
+
+} else { hideError(
+
+confirmPassword, document.getElementById("confirmPasswordError")
+
+);
+
+}
+
+if (isValid) {
+
+alert("Registration successful!"); bootstrap.Modal.getInstance( document.getElementById("registerModal")
+
+).hide();
+
+this.reset();
+
+}
+
+});
+
+Reset forms when modals are closed
+["loginModal", "registerModal"].forEach((modalId) => { document
+
+.getElementById(modalId)
+
+.addEventListener("hidden.bs.modal", function () { const form = this.querySelector("form"); form.reset();
+
+form
+
+.querySelectorAll(".is-invalid")
+
+.forEach((element) => element.classList.remove("is-invalid")
+
+.querySelectorAll(".error-message")
+
+.forEach((element) => (element.style.display = "none")); form.querySelectorAll(".password-toggle i").forEach((icon) => { icon.classList.replace("bi-eye-slash", "bi-eye");
+
+});
+
+form.querySelectorAll('input[type="text"]').forEach((input) => { if (input.id.includes("Password")) {
+
+input.type = "password";
+
+});
+
+}
+
+});
+
+});
+
+</script>
+
+Reset forms when modals are closed
+null
+Now you have to put all the script in your login page
+
+
+Now you have to put all the script in your login page
+Add script to login page now and get the output as this
+
+
+Add script to login page now and get the output as this
+null
+Now add the scripts to the register form
+
+
+Now add the scripts to the register form
+null
+Here is the form
+
+
+Here is the form
+null
+At the end your registration form will get validated
+
+
+At the end your registration form will get validated
+null

@@ -1,0 +1,306 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+85%
+
+Version Control
+Version Control
+Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time. Version control systems record changes in a special database called a repository. Each change to the code is called a commit or revision. Each revision is assigned a unique ID which allows referencing and rolling back to specific versions later on.
+
+What is Version Control
+Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
+Version control systems record changes in a special database called a repository. Each change to the code is called a commit or revision. Each revision is assigned a unique ID which allows referencing and rolling back to specific versions later on.
+Benefits Of using Version Control
+Collaboration - Version control enables multiple developers to work on the same codebase simultaneously without interfering with each other's work. Changes made by different developers can be merged intelligently.
+
+History and Versioning - Version control maintains logs of all changes made to the code, who made the changes, and when they were made. Developers can refer back to or restore previous versions of the code.
+
+Restore and Rollback - If bugs are introduced, developers can revert the codebase back to a previous known good state. Files can also be restored after accidental deletion or corruption.
+
+Branching - Branches allow developers to work on new features or test out bug fixes in isolation. Multiple branches can be created for different streams of work to avoid disrupting the main code.
+
+Traceability - Detailed logs show who made what changes when, improving transparency and accountability. Finding the root cause of issues becomes easier.
+
+Integrations - Version control integrates well with other DevOps tools like bug tracking, CI/CD, automated testing etc. This leads to more efficient development workflows.
+
+Faster Onboarding - New team members can get up to speed by looking at the code history and changes made by other developers.
+
+Code Reviews - Code reviews and approvals become easier by looking at changed lines and associated explanations.
+
+Experimental Edits - Developers can experiment boldly with changes. If the changes do not work out, they can simple rollback without side effects.
+
+
+
+Disaster Recovery - Version controlled code repositories act as backup stores if code is lost due to system failures, human errors etc.
+
+
+
+Summary:
+
+To summarize, version control is essential for collaborating and managing changes when building software. It provides key capabilities like history, backups, collaboration and branching to enable developers build software more efficiently.
+
+GitHub Repository
+Git:
+
+GitHub is built on top of Git, a distributed version control system.
+
+Git allows multiple developers to work on a project simultaneously without interfering with each other's work.
+
+
+
+Repository:
+
+In GitHub, a repository (repo) is a collection of files and the entire history of changes to those files.
+
+Repositories can be public or private, depending on whether you want to share your code with the public or keep it private.
+
+
+
+Next Step
+Collaboration:
+
+GitHub facilitates collaboration by enabling multiple developers to work on the same project.
+
+Developers can clone a repository, make changes, and then submit those changes for review and incorporation into the main codebase.
+
+Branching:
+
+Developers can create branches to work on features or fixes independently.
+
+Branches allow for parallel development without affecting the main codebase until changes are ready to be merged.
+
+
+
+Pull Requests:
+
+Pull Requests (PRs) are proposed changes submitted by a developer who has made changes in their branch.
+
+PRs are reviewed by others, and once approved, the changes can be merged into the main branch.
+
+
+
+Issues:
+
+GitHub Issues are used to track and discuss tasks, enhancements, bugs, or other types of questions or problems within a repository.
+
+Issues can be assigned to specific individuals and labeled for better organization.
+
+
+
+Importance of GitHub
+Code Versioning:
+
+GitHub provides a robust version control system, allowing developers to track changes, revert to previous states, and collaborate effectively.
+
+Collaboration and Teamwork:
+
+GitHub enables seamless collaboration among team members, fostering a sense of community and teamwork.
+
+Code Review:
+
+Pull Requests and code reviews on GitHub ensure that changes are thoroughly examined before merging into the main codebase, maintaining code quality.
+
+
+
+Documentation:
+
+GitHub repositories often include documentation, README files, and wikis that provide crucial information for users and developers.
+
+
+
+Continuous Integration/Continuous Deployment (CI/CD):
+
+GitHub integrates with CI/CD tools, automating testing and deployment processes for increased efficiency and reliability.
+
+Open Source Contributions:
+
+GitHub is a hub for open-source projects, allowing developers worldwide to contribute to various projects and learn from each other.
+
+
+
+?
+
+
+
+
+
+Project Management
+GitHub offers project management tools such as boards, milestones, and labels, helping teams organize and prioritize tasks.
+
+
+
+Community Support:
+
+Developers can seek help, share knowledge, and collaborate with the broader community through discussions, issues, and contributions.
+
+
+
+Note: GitHub is a powerful platform that supports collaborative software development, version control, and project management, making it an integral part of modern software development workflows.
+
+
+
+Manage Codes
+Git Basics:
+
+Repository (Repo):
+
+A repository is a container for your project and includes all of its files and version history.
+
+To create a new repository, use the git init command locally or create one on GitHub and clone it to your local machine.
+
+Cloning a Repository:
+
+Use git clone to copy a repository from GitHub to your local machine.
+
+Example: “git clone https://github.com/username/repository.git”
+
+
+
+?
+
+
+
+Committing Changes
+After making changes to your files, use git add to stage changes and git commit to save them to the version history.
+
+Committing Changes
+Next Step
+Branching:
+
+Create a new branch using git branch and switch to it with git checkout or use git checkout -b to create and switch in one command.
+
+Example: git checkout -b new-feature.
+
+
+
+Merging:
+
+Merge changes from one branch into another using git merge.
+
+Next Step
+Next Step
+Pushing Changes:
+
+Upload local changes to GitHub using git push.
+
+Example: git push origin main.
+
+
+
+?
+
+GitHub Features for Code Management
+Pull Requests (PRs):
+
+Open a pull request to propose changes from your branch to the main branch.
+
+PRs facilitate code review and collaboration.
+
+
+
+Code Review:
+
+GitHub's interface allows reviewers to comment on specific lines of code, suggest changes, and approve or request changes to a pull request.
+
+
+
+Branch Protection:
+
+Protect branches to prevent direct commits or force pushes, ensuring that changes go through the pull request process.
+
+Forks and Upstream:
+
+Fork a repository to create a personal copy. The original repository is referred to as the "upstream" repository.
+
+
+
+Code Searching:
+
+Utilize GitHub's search functionality to find code snippets, files, or specific terms within repositories.
+
+
+
+Blame and History:
+
+Use git blame or GitHub's web interface to see who made changes to a specific line of code and view the commit history.
+
+
+
+?
+
+
+
+Git Tags and Releases
+Tags:
+
+Tags are references to specific points in Git history, often used to mark release points.
+
+Create a tag with git tag.
+
+
+
+Releases:
+
+GitHub allows you to create releases, associating them with a tag. Releases often include release notes and downloadable assets.
+
+Project Management on GitHub
+Issues:
+
+• Use issues to track tasks, bugs, or feature requests. Issues can be assigned, labeled, and linked to pull requests.
+
+
+
+Projects:
+
+• GitHub Projects provide boards to organize and prioritize work. They can be used for sprint planning, bug tracking, and more.
+
+
+
+Wiki:
+
+• Repositories can have a Wiki for collaborative documentation.
+
+Collaboration:
+Collaborators:
+
+Add collaborators to your repository with different levels of access (read, write, or admin).
+
+
+
+Teams:
+
+Organize collaborators into teams for easier access management.
+
+Repository Settings
+Access Controls:
+
+• Manage permissions, branch protection, and repository visibility in the repository settings.
+
+
+
+Webhooks:
+
+• Set up webhooks for events like pushes, issues, or pull requests to trigger external actions.
+
+
+
+Git Ignore and Git Attributes
+.gitignore:
+
+Create a .gitignore file to specify files or directories to be ignored by Git.
+
+
+
+gitattributes:
+
+Use .gitattributes to control attributes such as line endings and merge strategies.
+

@@ -1,0 +1,227 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+46%
+
+Java Server Pages
+Java Server Pages
+Overview of History Java Server Pages (JSP) JSP Tags Using Java Bean Without using JDBC Using JDBC --> Database
+
+Java Server Pages
+Overview of History
+
+Java Server Pages
+Next Step
+HelloWorld
+
+Next Step
+Next Step
+
+
+Next Step
+Client - Server - DB
+
+
+Client - Server - DB 
+Life Cycle of Servlet
+
+
+Life Cycle of Servlet
+Interaction with Client
+• HttpServletRequest
+
+• String getParameter(String)
+
+• Enumeration getParameters(String[])
+
+
+
+HttpServletResponse
+
+• Writer getWriter()
+
+• ServletOutputStream getOutputStream() 
+
+
+
+• Handling GET and POST Requests
+
+Assignment 2: Get Stock Price
+
+
+Assignment 2: Get Stock Price
+Next Step
+
+
+Next Step
+Java Server Pages (JSP)
+
+
+Java Server Pages (JSP)
+A First JSP
+
+
+A First JSP
+Next Step
+
+
+Next Step
+JSP Tags
+• Comments  <%-- …...text…... --%>
+
+• Declaration  <%! int i; %>
+
+ <%! int numOfStudents(arg1,..) {} %>
+
+• Expression  <%= 1+1 %>
+
+• Scriptlets  <% … java code … %>
+
+• include file <%@ include file=“*.jsp” %>
+
+•…...
+
+
+
+Using Java Bean
+Declaration
+
+1. <jsp:useBean id=“bean1” class=“Bean1”/>
+
+2. <jsp:useBean id=“bean1” class=“Bean1” name=“serBean” type=“SerBean1”/>
+
+
+
+Setting property
+
+1. <jsp:setProperty name=“bean1” property=“color” value=“red”/>
+
+2. <jsp:setProperty name=“bean1” property=“color”/>
+
+3. <jsp:setProperty name=“bean1” property=“color” param=“bgColor”/>
+
+4. <jsp:setProperty name=“bean1” property=“*”/>
+
+
+
+Getting property
+
+?1. <jsp:getProperty name=“bean1” property=“color”/>
+
+2. <%=bean1.getColor() %>
+
+
+
+Assg2 example
+
+
+Assg2  example
+ass2.jsp
+
+
+ass2.jsp
+Next Step
+
+
+Next Step
+Without using JDBC
+Public class StockGrabber {
+
+  ...
+
+  public void processInput(){
+
+  if(stockMarket.compareTo("Waterhouse")==0){
+
+       setPrePriceString("<!--Last-->");
+
+        setPostPriceString("</FONT>");
+
+        setUrlPrefix("http://research.tdwaterhouse.com/
+
+       waterhouse/quote.asp?ticker=");
+
+    }
+
+    else if(stockMarket.compareTo("Yahoo")==0){
+
+        setPrePriceString("<td nowrap><b>");
+
+        setPostPriceString("</b></td>");
+
+        setUrlPrefix("http://finance.yahoo.com/q?s=");
+
+    }
+
+    ...
+
+    else if(...){}
+
+    ...
+
+    else{...}
+
+  }
+
+  ...
+
+}
+
+Using JDBC --> Database
+import java.sql.*;
+
+Public class StockGrabber {
+
+  ...
+
+  public void processInput(){
+
+ try {
+
+     Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+
+             String sourceURL="jdbc:odbc:stockInfo";
+
+     Connection databaseConnection=DriverManager.getConnection(sourceURL);
+
+     Statement statement=databaseConnection.createStatement();
+
+     ResultSet  info =statement.executeQuery(
+
+                 "select tPrePriceStr, tPostPriceStr, tUrlPrefix
+
+         from stockMarketData
+
+                  where tStockMarket = stockMarket”);
+
+     while(inf.next()) 
+
+           {
+
+        prePriceString = info.getString(”tPrePriceStr");
+
+ postPriceString = info.getString(“tPostPriceStr”);
+
+ urlPrefix      = info.getString(“tUrlPrefix”);
+
+           }
+
+     }
+
+ catch(SQLException e){ ... }
+
+ ...  
+
+  }
+
+}
+

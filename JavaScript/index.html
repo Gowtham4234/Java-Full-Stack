@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Register</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .error-message {
+      color: red;
+      font-size: 0.875em;
+      display: none;
+    }
+    .password-toggle {
+      cursor: pointer;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .position-relative {
+      position: relative;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <!-- Trigger buttons -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+  <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="loginForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" id="loginEmail" class="form-control">
+              <div id="loginEmailError" class="error-message">Invalid email.</div>
+            </div>
+            <div class="mb-3 position-relative">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" id="loginPassword" class="form-control">
+              <i class="bi bi-eye-slash password-toggle"></i>
+              <div id="loginPasswordError" class="error-message">Invalid password.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="registerForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="registerName" class="form-label">Name</label>
+              <input type="text" id="registerName" class="form-control">
+              <div id="registerNameError" class="error-message">Name is required.</div>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email</label>
+              <input type="email" id="registerEmail" class="form-control">
+              <div id="registerEmailError" class="error-message">Invalid email.</div>
+            </div>
+            <div class="mb-3 position-relative">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" id="registerPassword" class="form-control">
+              <i class="bi bi-eye-slash password-toggle"></i>
+              <div id="registerPasswordError" class="error-message">Invalid password.</div>
+            </div>
+            <div class="mb-3 position-relative">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" id="confirmPassword" class="form-control">
+              <i class="bi bi-eye-slash password-toggle"></i>
+              <div id="confirmPasswordError" class="error-message">Passwords do not match.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS & Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Example VALIDATORS and helpers
+    const VALIDATORS = {
+      email: (value) => /\S+@\S+\.\S+/.test(value),
+      password: (value) => value.length >= 6,
+      name: (value) => value.trim() !== ""
+    };
+
+    function validateField(input, errorElement, validator) {
+      if (!validator(input.value)) {
+        input.classList.add("is-invalid");
+        errorElement.style.display = "block";
+        return false;
+      } else {
+        input.classList.remove("is-invalid");
+        errorElement.style.display = "none";
+        return true;
+      }
+    }
+
+    function showError(input, errorElement) {
+      input.classList.add("is-invalid");
+      errorElement.style.display = "block";
+    }
+
+    function hideError(input, errorElement) {
+      input.classList.remove("is-invalid");
+      errorElement.style.display = "none";
+    }
+
+    // Password toggle logic
+    document.querySelectorAll(".password-toggle").forEach((icon) => {
+      icon.addEventListener("click", function () {
+        const input = this.previousElementSibling;
+        if (input.type === "password") {
+          input.type = "text";
+          this.classList.replace("bi-eye-slash", "bi-eye");
+        } else {
+          input.type = "password";
+          this.classList.replace("bi-eye", "bi-eye-slash");
+        }
+      });
+    });
+
+    // Your validation script goes here
+    // (Add your JavaScript code here as provided earlier)
+  </script>
+</body>
+</html>

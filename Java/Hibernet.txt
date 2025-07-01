@@ -1,0 +1,1176 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate
+Hibernate
+Hibernate Framework ORM Tool What is JPA
+
+Introduction to Hibernate
+Hibernate Framework
+
+Hibernate is a Java framework that simplifies the development of Java application to interact with the database. It is an open source, lightweight, ORM (Object Relational Mapping) tool. Hibernate implements the specifications of JPA (Java Persistence API) for data persistence.
+
+
+
+ORM Tool
+
+An ORM tool simplifies the data creation, data manipulation and data access. It is a programming technique that maps the object to the data stored in the database.
+
+What is JPA?
+Java Persistence API (JPA) is a Java specification that provides certain functionality and standard to ORM tools. The javax.persistence package contains the JPA classes and interfaces.
+
+
+
+Advantages of Hibernate Framework
+
+Following are the advantages of hibernate framework:
+
+
+
+1) Open Source and Lightweight
+
+Hibernate framework is open source under the LGPL license and lightweight.
+
+
+
+2) Fast Performance
+
+The performance of hibernate framework is fast because cache is internally used in hibernate framework. There are two types of cache in hibernate framework first level cache and second level cache. First level cache is enabled by default.
+
+
+
+3)Database Independent Query
+
+HQL (Hibernate Query Language) is the object-oriented version of SQL. It generates the database independent queries. So you don't need to write database specific queries. Before Hibernate, if database is changed for the project, we need to change the SQL query as well that leads to the maintenance problem.
+
+
+
+4) Automatic Table Creation
+
+Hibernate framework provides the facility to create the tables of the database automatically. So there is no need to create tables in the database manually.
+
+
+
+5) Simplifies Complex Join
+
+Fetching data from multiple tables is easy in hibernate framework.
+
+6) Provides Query Statistics and Database Status
+
+Hibernate supports Query cache and provide statistics about query and database status.
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate Relationships and Associations
+Hibernate Relationships and Associations
+Hibernate is a powerful open-source framework for Java that provides an object-relational mapping solution. It simplifies the process of working with databases which allow developers to map Java objects with the data present in the database tables. Hibernate handles the data persistence which allows developers to focus more on object-oriented aspects rather than focusing on low-level database operations. What is Bidirectional Association in Hibernate? In Hibernate, bidirectional association refers to the relationship between two entities where each entity has a reference to the other entity. It allows you to navigate from one entity to another entity that is associated with it and vice versa as well. We can achieve bidirectional association by defining the relationship and mapping the annotations in the entity classes. There are 4 different types of Bidirectional association which are as follows.
+
+4s
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate mapping entities
+Hibernate mapping entities
+Basic entity mapping Customized entity mapping Result set mappings Entity Graphs
+
+Basic entity mapping
+The following code snippet shows the simplest, annotation based mapping. You just add an @Entity annotation to the class and an @Id annotation to the primary key attribute. Hibernate maps the entity to a database table with the same name and uses a default mapping for each attribute.
+
+Next Step
+• @Entity
+
+• public class Author {
+
+•
+
+•   @Id
+
+•   private Long id;
+
+•
+
+•   …
+
+•}
+
+Next Step
+You can define the same configuration with the following XML file
+
+
+
+• <entity-mappings>
+
+•   <entity class="org.thoughts.on.java.model.Author" name="Author">       
+
+•       <attributes>
+
+•           <id name="id">
+
+•           </id>
+
+•       </attributes>
+
+•  </entity>
+
+• </entity-mappings>
+
+Customized entity mapping
+You can adapt this default mapping with a set of annotations. The following example tells Hibernate to map the Author entity to the author table in the bookstore schema, to map the id attribute to the author_id column and to use the sequence author_seq to generate its primary key value.
+
+• @Entity
+
+• @Table(name = “author”, schema = “bookstore”)
+
+• public class Author {
+
+•
+
+•   @Id
+
+•   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = “author_generator”)
+
+
+
+• @SequenceGenerator(name=”author_generator”, sequenceName = “author_seq”)
+
+•   @Column(name = “author_id”)
+
+•   private Long id;
+
+•
+
+•   …
+
+•}
+
+
+
+Next Step
+•And as in the previous example, you can, of course, define the same mapping in XML.
+
+
+
+<entity-mappings>
+
+   <entity class="org.thoughts.on.java.model.Author" name="Author">
+
+       <table name="author" />
+
+       <schema name="bookstore" />  
+
+       <attributes>
+
+           <id name="id">
+
+               <generated-value strategy="sequence" generator="author_generator"/>
+
+               <column name="author_id"/>
+
+
+
+• </id>
+
+•        </attributes>
+
+•   </entity>
+
+•   <sequence-generator name="author_generator" sequence-name="author_seq"/>
+
+• </entity-mappings>
+
+Next Step
+Query definitions
+
+• You can also define named queries, result set mappings, entity graphs, etc. via annotations and in XML.
+
+
+
+Named queries
+
+• You can define a named JPQL query with a @NamedQuery and a named native SQL query with a @NamedNativeQuery annotation. Both of them follow the same idea. You define the query once and reference the definition by its name to instantiate it in your business code.
+
+
+
+• @Entity
+
+• @NamedQuery(name = Author.QUERY_SELECT_BY_ID, query = “SELECT a FROM Author a WHERE a.id = :” + Author.PARAM_ID)
+
+• public class Author {
+
+•   public static final String QUERY_SELECT_BY_ID = “Author.selectById”;
+
+•   public static final String PARAM_ID = “id”;
+
+•
+
+•   …
+
+•}
+
+
+
+And you can define the same query in your orm.xml file.
+
+• <entity-mappings>
+
+•  <entity class="org.thoughts.on.java.model.Author" name="Author">
+
+•   ...
+
+•   <named-query name="Author.selectById">
+
+•       <query><![CDATA[
+
+•       SELECT a FROM Author a WHERE a.id = :id
+
+•       ]]></query>
+
+•   </named-query>
+
+•  </entity>
+
+•  ...
+
+• </entity-mappings>
+
+Result set mappings
+• Native SQL queries allow you to use all SQL features supported by your database but they return an Object[] or a List<Object[]> instead of the mapped objects you get from a JPQL query. You can either map these results programmatically or define a result set mapping and let Hibernate do the work. I will only show a quick example of such a mapping in this post. If you want to dive deeper, you should take a look at my Result Set Mapping series. The following code snippet shows a simple @SqlResultSetMapping definition that maps the columns authorId, firstName, lastName and version of the native query result to the attributes of the Author entity.
+
+
+
+• @SqlResultSetMapping(
+
+•       name = "AuthorMapping",
+
+•       entities = @EntityResult(
+
+•               entityClass = Author.class,
+
+•               fields = {
+
+•                   @FieldResult(name = "id", column = "authorId"),
+
+•                   @FieldResult(name = "name", column = "name")}))
+
+Entity Graphs
+Entity Graphs define a graph of entities which Hibernate fetches within 1 query. This is a good approach to avoid n+1 select issues and improve the performance of your application. The following code snippet shows the annotation based definition of a named entity graph which tells Hibernate to fetch the Order entity together with all associated entities mapped by the items attribute.
+
+
+
+@Entity
+
+@NamedEntityGraph(name = "graph.Author.books",
+
+     attributeNodes = @NamedAttributeNode("books"))
+
+public class Author {
+
+
+
+• private List<Book> books = new ArrayList<Book>();
+
+•  
+
+• ...
+
+•}
+
+• As you can see in the following code snippet, you can do the same with an XML configuration.
+
+•
+
+• <entity-mappings>
+
+•  <entity class="org.thoughts.on.java.model.Author" name="Author">
+
+•   ...
+
+•
+
+•   <named-entity-graph name="graph.Author.books">
+
+
+
+• <named-attribute-node name="books" />
+
+•       </named-entity-graph>
+
+• </entity>
+
+•  ...
+
+• </entity-mappings>
+
+
+
+
+
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate Crud Operations
+Hibernate Crud Operations
+Here, we are going to create a web application with hibernate. For creating the web application, we are using JSP for presentation logic, Bean class for representing data and DAO class for database codes. As we create the simple application in hibernate, we don't need to perform any extra operations in hibernate for creating web application. In such case, we are getting the value from the user using the JSP file.
+
+Web Application with Hibernate (using XML)
+Here, we are going to create a web application with hibernate. For creating the web application, we are using JSP for presentation logic, Bean class for representing data and DAO class for database codes.
+
+
+
+As we create the simple application in hibernate, we don't need to perform any extra operations in hibernate for creating web application. In such case, we are getting the value from the user using the JSP file.
+
+Next Step
+Example to create web application using hibernate
+
+In this example, we are going to insert the record of the user in the database. It is simply a registration form.
+
+
+
+index.jsp
+
+This page gets input from the user and sends it to the register.jsp file using post method.
+
+
+
+• <form action="register.jsp" method="post"> 
+
+• Name:<input type="text" name="name"/><br><br/> 
+
+• Password:<input type="password" name="password"/><br><br/> 
+
+• Email ID:<input type="text" name="email"/><br><br/> 
+
+• <input type="submit" value="register"/>" 
+
+• 
+
+• </form> 
+
+
+
+register.jsp
+
+
+
+• This file gets all request parameters and stores this information into an object of User class. Further, it calls the register method of UserDao class passing the User class object.
+
+
+
+• <%@page import="com.javatpoint.mypack.UserDao"%> 
+
+• <jsp:useBean id="obj" class="com.javatpoint.mypack.User"> 
+
+• </jsp:useBean> 
+
+• <jsp:setProperty property="*" name="obj"/> 
+
+• 
+
+• <% 
+
+• int i=UserDao.register(obj); 
+
+• if(i>0) 
+
+• out.print("You are successfully registered"); 
+
+• 
+
+• %> 
+
+
+
+
+
+User.java
+It is the simple bean class representing the Persistent class in hibernate.
+
+
+
+• package com.javatpoint.mypack; 
+
+• 
+
+• public class User { 
+
+• private int id; 
+
+• private String name,password,email; 
+
+• 
+
+• //getters and setters 
+
+• 
+
+}
+
+
+
+user.hbm.xml
+
+It maps the User class with the table of the database.
+
+
+
+• <?xml version='1.0' encoding='UTF-8'?> 
+
+• <!DOCTYPE hibernate-mapping PUBLIC 
+
+• "-//Hibernate/Hibernate Mapping DTD 5.3//EN" 
+
+• "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd"> 
+
+• 
+
+• <hibernate-mapping> 
+
+• <class name="com.javatpoint.mypack.User" table="u400"> 
+
+• <id name="id"> 
+
+• <generator class="increment"></generator> 
+
+• </id>  
+
+
+
+• <property name="name"></property> 
+
+• <property name="password"></property> 
+
+• <property name="email"></property> 
+
+• </class> 
+
+•        
+
+• </hibernate-mapping> 
+
+UserDao.java
+A Dao class, containing method to store the instance of User class.
+
+
+
+• package com.javatpoint.mypack;   
+
+• import org.hibernate.Session; 
+
+• import org.hibernate.SessionFactory; 
+
+• import org.hibernate.Transaction; 
+
+• import org.hibernate.boot.Metadata; 
+
+• import org.hibernate.boot.MetadataSources; 
+
+• import org.hibernate.boot.registry.StandardServiceRegistry; 
+
+• import org.hibernate.boot.registry.StandardServiceRegistry
+
+
+
+public class UserDao {   
+
+   
+
+public static int register(User u){   
+
+ int i=0;   
+
+ 
+
+ StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build(); 
+
+ Metadata meta = new MetadataSources(ssr).getMetadataBuilder().bu
+
+SessionFactory factory = meta.getSessionFactoryBuilder().build(); 
+
+
+
+• Session session = factory.openSession(); 
+
+• Transaction t = session.beginTransaction();  
+
+• 
+
+• i=(Integer)session.save(u);   
+
+• 
+
+• t.commit();   
+
+• session.close();   
+
+•   
+
+• return i;   
+
+•  
+
+• }   
+
+• } 
+
+hibernate.cfg.xml
+It is a configuration file, containing informations about the database and mapping file.
+
+
+
+• <?xml version='1.0' encoding='UTF-8'?> 
+
+• <!DOCTYPE hibernate-configuration PUBLIC 
+
+•         "-//Hibernate/Hibernate Configuration DTD 5.3//EN" 
+
+•         "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd"> 
+
+• 
+
+<hibernate-configuration>
+
+
+
+• <session-factory> 
+
+• <property name="hbm2ddl.auto">create</property> 
+
+• <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property> 
+
+• <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> 
+
+• <property name="connection.username">system</property> 
+
+• <property name="connection.password">jtp</property> 
+
+• <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
+
+•  <mapping resource="user.hbm.xml"/>
+
+
+
+• </session-factory> 
+
+ 
+
+• </hibernate-configuration> 
+
+
+
+
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate Caching and Transactions
+Hibernate Caching and Transactions
+Caching in Hibernate refers to the technique of storing frequently accessed data in memory to improve the performance of an application that uses Hibernate as an Object-Relational Mapping (ORM) framework. Hibernate provides two levels of caching :
+
+Hibernate Caching and Transactions
+Caching in Hibernate refers to the technique of storing frequently accessed data in memory to improve the performance of an application that uses Hibernate as an Object-Relational Mapping (ORM) framework. Hibernate provides two levels of caching:
+
+
+
+First-Level Cache: Hibernate uses a session-level cache, also known as a first-level cache, to store the data that is currently being used by a specific session. When an entity is loaded or updated for the first time in a session, it is stored in the session-level cache. Any subsequent request to fetch the same entity within the same session will be served from the cache, avoiding a database round-trip. The session-level cache is enabled by default and cannot be disabled.
+
+
+
+Second-Level Cache: Hibernate also supports a second-level cache, which is a shared cache across multiple sessions. This cache stores data that is frequently used across different sessions, reducing the number of database queries and improving the overall performance of the application. The second-level cache can be configured with various caching providers, such as Ehcache, Infinispan, and Hazelcast.
+
+
+
+?Using caching in Hibernate can significantly improve the performance of an application by reducing the number of database round-trips and improving response times. However, it is important to use caching carefully, as it can also cause issues such as stale data, memory leaks, and increased complexity in managing the cache.
+
+What are the benefits of caching in Hibernate?
+Improved Performance: Hibernate caching can significantly improve the performance of an application by reducing the number of database round-trips required to retrieve data. By storing frequently accessed data in memory, Hibernate can serve subsequent requests for the same data from the cache, reducing the time it takes to retrieve the data from the database.
+
+
+
+Reduced Database Load: Caching in Hibernate can reduce the load on the database by minimizing the number of queries made to the database. This can help to improve the scalability of the application and reduce the risk of database overload.
+
+
+
+• Increased Concurrency: Hibernate caching can increase concurrency by reducing the time that multiple users or threads spend waiting for the database. By storing frequently accessed data in memory, Hibernate can serve multiple requests for the same data from the cache simultaneously.
+
+
+
+Customizable Cache Configuration: Hibernate provides a customizable caching framework that allows developers to configure the cache to meet the specific needs of their application. This includes the ability to configure the cache provider, cache regions, cache strategies, and cache eviction policies.
+
+Second-level cache providers in Hibernate
+• Hibernate provides several second-level cache providers that can be used to store cached data in a shared cache across multiple sessions. These include:
+
+
+
+ Hibernate provides several second-level cache providers that can be used to store cached data in a shared cache across multiple sessions. These include:
+
+
+
+ Ehcache: Ehcache is a popular open-source caching library that provides an efficient in-memory caching solution for Hibernate. It supports various features such as expiration policies, distributed caching, and persistent caching.
+
+
+
+ Infinispan: Infinispan is an open-source data grid platform that provides a distributed cache for Hibernate. It supports various caching modes such as local, replicated, and distributed caching and provides features such as expiration policies, transactions, and data eviction.
+
+
+
+ Hazelcast: Hazelcast is an open-source in-memory data grid that provides a distributed caching solution for Hibernate. It supports various features such as distributed caching, data partitioning, data replication, and automatic failover.
+
+
+
+JBoss Cache: JBoss Cache is a popular open-source caching library that provides a scalable and distributed caching solution for Hibernate. It supports various features such as distributed caching, data replication, and transactional caching.
+
+
+
+Caffeine: Caffeine is a high-performance in-memory caching library that provides a fast and efficient caching solution for Hibernate. It supports various features such as expiration policies, eviction policies, and asynchronous loading.
+
+
+
+How to configure the second-level cache?
+To configure the second-level cache in Hibernate, you need to perform the following steps :
+
+• Choose a cache provider: You can choose a cache provider that meets your application requirements. Hibernate provides several cache providers such as Ehcache, Infinispan, Hazelcast, JBoss Cache, and Caffeine.
+
+• Add the caching provider to the classpath: You need to add the caching provider library to the classpath of your Hibernate application.
+
+• Configure Hibernate properties: You need to configure Hibernate properties to enable the second-level cache and specify the caching provider. For example, to enable the Ehcache provider, you can add the following properties to the hibernate.cfg.xml file:
+
+
+
+• Configure entity caching: You need to configure entity caching for specific entities in your Hibernate application. You can do this by adding the @Cacheable annotation to the entity class and specifying the cache region name.
+
+
+
+• @Entity
+
+• @Cacheable
+
+• @Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region="myEntityCache")
+
+• public class MyEntity {
+
+•   // ...
+
+• }
+
+Next Step
+• Configure query caching: You can also configure query caching to cache the results of frequently executed queries. You can do this by adding the setCacheable(true) method to the Query object and specifying the cache region name.
+
+
+
+• Query query = session.createQuery("from MyEntity where name=:name");
+
+• query.setParameter("name", "John");
+
+• query.setCacheable(true);
+
+• query.setCacheRegion("myQueryCache");
+
+
+
+?
+
+How Does Hibernate second-level cache work ?
+Hibernate second-level cache works by storing entity and query data in a shared cache that is accessible across multiple sessions. When a query or entity is fetched for the first time, it is stored in the second-level cache, and any subsequent requests for the same entity or query are served from the cache rather than querying the database again.
+
+
+
+Here is a high-level overview of how Hibernate second-level cache works:
+
+• A request is made to fetch an entity or execute a query: When a request is made to fetch an entity or execute a query, Hibernate checks the second-level cache to see if the data is already cached.
+
+• Cache lookup: If the data is already cached, Hibernate retrieves it from the cache and returns it to the user.
+
+
+
+• Database query: If the data is not cached, Hibernate queries the database to fetch the data and then stores it in the second-level cache for future use.
+
+• Cache eviction: When an entity is updated or deleted, Hibernate automatically removes the corresponding entry from the second-level cache to ensure data consistency.
+
+Cache expiration: The second-level cache can also be configured to expire entries based on certain criteria such as time-to-live or maximum cache size.
+
+
+
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Hibernate and Spring Integrations
+Hibernate and Spring Integrations
+We can simply integrate hibernate application with spring application. In hibernate framework, we provide all the database information hibernate.cfg.xml file. But if we are going to integrate the hibernate application with spring, we don't need to create the hibernate.cfg.xml file. We can provide all the information in the applicationContext.xml file.
+
+Hibernate and Spring Integrations
+We can simply integrate hibernate application with spring application.
+
+
+
+In hibernate framework, we provide all the database information hibernate.cfg.xml file.
+
+
+
+But if we are going to integrate the hibernate application with spring, we don't need to create the hibernate.cfg.xml file. We can provide all the information in the applicationContext.xml file.
+
+
+
+Advantage of Spring framework with hibernate
+
+
+
+The Spring framework provides HibernateTemplate class, so you don't need to follow so many steps like create Configuration, BuildSessionFactory, Session, beginning and committing transaction etc.
+
+
+
+Understanding problem without using spring:
+
+
+
+Let's understand it by the code of hibernate given below.
+
+
+
+/creating configuration 
+
+Configuration cfg=new Configuration();   
+
+cfg.configure("hibernate.cfg.xml");   
+
+   
+
+//creating seession factory object   
+
+SessionFactory factory=cfg.buildSessionFactory();   
+
+   
+
+//creating session object   
+
+Session session=factory.openSession();   
+
+   
+
+//creating transaction object   
+
+Transaction t=session.beginTransaction(); 
+
+
+
+Employee e1=new Employee(111,"arun",40000);   
+
+session.persist(e1);//persisting the object   
+
+   
+
+t.commit();//transaction is commited   
+
+session.close();
+
+
+
+Solution by using HibernateTemplate class of Spring Framework:
+
+Now, you don't need to follow so many steps. You can simply write this:
+
+Employee e1=new Employee(111,"arun",40000);   
+
+hibernateTemplate.save(e1); 
+
+
+
+Methods of HibernateTemplate class
+Let's see a list of commonly used methods of HibernateTemplate class.
+
+No.                Method                                             Description
+
+1) void persist(Object entity)           persists the given object.
+
+2) Serializable save(Object entity)           persists the given object    and returns id.
+
+3)void saveOrUpdate(Object entity)            persists or updates the             given object. If id is found, it updates the record otherwise saves the record.
+
+
+
+Steps
+
+Let's see what are the simple steps for hibernate and spring integration
+
+
+
+• create table in the database It is optional.
+
+• create applicationContext.xml file It contains information of DataSource, SessionFactory etc.
+
+• create Employee.java file It is the persistent class
+
+• create employee.hbm.xml file It is the mapping file.
+
+• create EmployeeDao.java file It is the dao class that uses HibernateTemplate.
+
+• create InsertTest.java file It calls methods of EmployeeDao class.
+
+create the table in the database
+• In this example, we are using the Oracle as the database, but you may use any database. Let's create the table in the oracle database
+
+
+
+?CREATE TABLE "EMP558"  
+
+  (   "ID" NUMBER(10,0) NOT NULL ENABLE,  
+
+   "NAME" VARCHAR2(255 CHAR),  
+
+   "SALARY" FLOAT(126),  
+
+    PRIMARY KEY ("ID") ENABLE 
+
+  ) 
+
+/ 
+
+Employee.java
+• It is a simple POJO class. Here it works as the persistent class for hibernate.
+
+• package com.javatpoint; 
+
+• public class Employee { 
+
+• private int id; 
+
+• private String name; 
+
+• private float salary; 
+
+• //getters and setters 
+
+• } 
+
+
+
+employee.hbm.xml
+
+This mapping file contains all the information of the persistent class.
+
+• <?xml version='1.0' encoding='UTF-8'?> 
+
+• <!DOCTYPE hibernate-mapping PUBLIC 
+
+• "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+• "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+• <hibernate-mapping> 
+
+• <class name="com.javatpoint.Employee" table="emp558"> 
+
+
+
+• <id name="id"> 
+
+•         <generator class="assigned"></generator> 
+
+•         </id> 
+
+•           
+
+•         <property name="name"></property> 
+
+•         <property name="salary"></property> 
+
+• </class> 
+
+           
+
+• </hibernate-mapping> 
+
+
+
+
+
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+69%
+
+Dependency injection
+Dependency injection
+1. What is dependency injection 2. What is SOLID 3. Single responsibility principle 4. Dependency inversion principle 5. What is dependency injection 6. Why Dependency Injection
+
+What is dependency injection
+“Put appropriate instances in;
+
+don’t let the object create them.”
+
+
+
+Thanks for your atten… wait, wait, its “a bit” more complicated.
+
+What is SOLID?
+• S - Single responsibility principle (SRP)
+
+• O - Open/closed principle (OCP)
+
+• L - Liskov substitution principle (LSP)
+
+• I - Interface segregation principle (ISP)
+
+• D - Dependency inversion principle (DIP)
+
+What is SOLID?
+Single responsibility principle
+A class should only have one responsibility
+
+• having problems finding a name is a sign of a violation
+
+• creating things is a responsibility -> factory
+
+• related to separation of concerns (SoC)
+
+Single responsibility principle
+Dependency inversion principle
+Abstractions should not depend on details. Details should depend on abstractions
+
+
+
+• "Code against interfaces (i.e. abstractions) not implementations (details)" 
+
+Dependency inversion principle
+What is dependency injection
+"Dependency Injection is a 25-dollar term for a 5-cent concept."
+
+"Don't look for things ask for them!"
+
+What is dependency injection
+Why Dependency Injection
+• Decoupling of software pieces (classes)
+
+• SRP
+
+• flexibility
+
+• composability
+
+• exchangeability
+
+• testability (mocking)
+
+• maintainability
+
+Why Dependency Injection
+„To create or not to create“
+ Injectables and creatables– who is who?
+
+ Example for creatables:
+
+• All kinds of collections to store data or inner state (lists, dictionaries, TStrings, dynamic arrays, TStream)
+
+• PODOs (aka data objects) – but sometimes not directly but with a factory depending on other requirements
+
+Injectables are those things that actually do something often called services.
+
+
+
+
+
+Reading suggestions
+
+
+Reading suggestions
+Pure DI
+Learn and understand how DI works, what patterns and practices are helpful before using an automated way.
+
+
+
+Try putting your dependencies together manually to get a feeling for howto design your classes and interfaces
+
+
+
+Once you‘ve written pages and pages of constructor calls, consider using a DI container
+
+Service Locator
+DI is about passing things (to the constructor basically)
+
+Service Locator is about looking for things actively
+
+Code smell and dangerous anti-pattern
+
+• Creates dependencies not only on the service locator but implicitly on types that need to be existing in the service locator
+
+• Not easily noticable when creating a class but only when some method gets called
+
+Composition root
+The point where DI starts– ideally there is only one and it‘s at the very start of the application
+
+
+
+Whentrying to fit DI into an existing application you might have multiple at first
+
+
+
+Move them closer to the start of the application and eventually they will converge
+
+
+
+DI Container (finally!...)
+ Factory pattern on steroids
+
+• And a repository, and some other design patterns
+
+A central place to register all your injectables and let them be created and composed automatically.
+
+Registering types
+ RegisterType
+
+• Tell the container what implementing type is available and as what type it can resolve it
+
+• Possibility to delegate the creation to another place than the container itself
+
+
+
+RegisterInstance
+
+• Tell the container about an existing instance to let it participate in dependency injection
+
+Registering types (advanced)
+RegisterFactory
+
+• Register a type and let the container provide its implemention which then serves as factory to return instances returned by the container.
+
+
+
+RegisterDecorator
+
+• Register a type and let the container use it as decorator for other classes when it resolves them and automatically apply them.
+
+Controlling lifetimes
+New instance every time or use only one?
+
+• Transient vs Singleton
+
+
+
+Possibility to control when new instances are being created or already created ones are returned
+
+ • Singleton, SingletonPerThread, PerResolve, Pooled
+
+Type providers
+Possibility to extend the container to give it special knowledge about specific types and how to build them.
+
+Examples of built-in providers are: LazyProvider, ListProvider, DynamicArrayProvider
+
+Types of injection
+Constructor Injection
+
+• constructor parameters
+
+• mandatory dependencies
+
+
+
+Property Injection
+
+• properties/setter
+
+• optional dependencies
+
+• Null-Object pattern
+
+
+
+Field Injection
+
+• Use only in exceptional cases this is not possible with pure DI
+
+Types of injection
+Controlling the composition
+Types can be named
+
+
+
+• All injection targets can be marked with the [Inject] attribute to control where and what is being injected
+
+
+
+• Additional conditions can be applied to types and injection targets (planned)
+
+
+
+Let‘s take a look at some example
+
+Controlling the composition
+3s

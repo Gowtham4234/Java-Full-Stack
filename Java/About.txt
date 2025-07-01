@@ -1,0 +1,730 @@
+Brand
+Material UI Configurator
+See our dashboard options.
+
+Sidenav Colors
+Sidenav Type
+Choose between different sidenav types.
+Navbar Fixed
+Light / Dark
+Thank you for sharing!
+Brand
+Java Full Stack
+38%
+
+Core Java
+Core Java
+1. What is Java ? 2. Types of Java Applications 3. Features of Java
+
+What is Java
+Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+ 
+
+Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+Java Example
+Let's have a quick look at Java programming example. A detailed description of Hello Java example is available in next page.
+
+
+
+Simple.java
+
+ 
+
+class Simple{
+
+public static void main(String args[]){ System.out.println("Hello Java");
+
+}
+
+}
+
+Types of Java Applications
+There are the following 4-types of applications that can be created using Java programming:
+
+ 
+
+1)   Standalone Application
+
+Standalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every machine. Examples of standalone application are Media player, antivirus, etc. AWT and Swing are used in Java for creating standalone applications.
+
+ 
+
+2)   Web Application
+
+An application that runs on the server side and creates a dynamic page is called a web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF, etc. technologies are used for creating web applications in Java.
+
+
+
+ 
+
+ 
+
+3)   Enterprise Application
+
+An application that is distributed in nature, such as banking applications, etc. is called an enterprise application. It has advantages like high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.
+
+ 
+
+4)   Mobile Application
+
+An application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.
+
+Features of Java
+The primary objective of Java programming language creation was to make it portable, simple and secure programming language.
+
+ 
+
+The features are:
+
+ 
+
+1.  Simple
+
+2.  Object-Oriented
+
+3.  Portable
+
+4.  Platform independent
+
+5.  Secured
+
+6. Robust
+
+7.  Architecture neutral
+
+8.  Interpreted
+
+9.   High Performance
+
+10. Multithreaded
+
+11 Distributed
+
+12. Dynamic
+
+
+
+Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:
+
+ 
+
+1. Java syntax is based on C++ (so easier for programmers to learn it after C++).
+
+ 
+
+2. Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.
+
+ 
+
+There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
+
+Platform Independent
+Java is platform independent.
+ 
+
+Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+ 
+
+There are two types of platforms software-based and hardware-based. Java provides a software-based platform.
+
+ 
+
+The Java platform differs from most other platforms in the sense that it is a software- based platform that runs on top of other hardware-based platforms. It has two components.
+
+Runtime Environment
+API(Application Programming Interface) Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on Confidential ©2024 EduSkills multiple platforms, i.e., Write Once and Run Anywhere (WORA). 
+
+Secured
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because: 1. No explicit pointer 2. Java Programs run inside a virtual machine sandbox.
+
+Secured
+null
+Robust
+The English mining of Robust is strong. Java is robust because:
+
+ 
+
+•   It uses strong memory management.
+
+•  There is a lack of pointers that avoids security problems.
+
+•  Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+
+•   There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+
+Please make sure you have installed Java 8
+To cheak, you have to go to command prompt.
+ 
+
+Please make sure you have installed Java 8
+If not install java from Oracle, click on the first link
+
+
+If not install java from Oracle, click on the first link
+Click on products, on the front web page
+
+
+Click on products, on the front web page
+null
+After clicking, you will get an interface as this, and click on Java
+
+
+After clicking, you will get an interface as this, and click on Java
+null
+Click to “Download Java”
+
+
+Click to “Download Java”
+null
+On clicking, “Download Java” you will get this list
+
+
+On clicking, “Download Java” you will get this list
+null
+Scroll down , You will get Java 8 for windows
+
+
+Scroll down , You will get Java 8 for windows
+null
+Click to 64* installer, to download
+
+
+Click to 64* installer, to download
+null
+Review this
+
+
+Review this
+null
+Create an account in oracle, to download smoothly
+
+
+Create an account in oracle, to download smoothly
+null
+And install java 8 successfully
+To cheak it in command prompt.
+
+And install java 8 successfully
+First of all you have to go for creating a maven project
+Step: 1 – First of all select the IDE for a runtime environment. For this, go to chrome engine and search for “Eclipse O3” IDE.
+
+First of all you have to go for creating a maven project
+null
+Click on the second link
+
+
+Click on the second link
+null
+Choose the first link to download the IDE
+
+
+Choose the first link to download the IDE
+null
+After clicking, you will observe a link
+
+
+After clicking, you will observe a link
+null
+Click this link to download
+
+
+Click this link to download
+null
+For downloading the IDE, the minimum space required is 400 mb and it will get downloaded
+After downloading, go to your downloads and you will observe this.
+For downloading the IDE, the minimum space required is 400 mb and it will get downloaded
+You will get this folder
+
+
+You will get this folder
+Press this icon
+
+
+Press this icon
+null
+Start the IDE
+
+
+Start the IDE
+null
+Press on Launch
+
+
+Press on Launch
+null
+This is the interface you will get,
+
+
+This is the interface you will get,
+null
+Now we shall go for creation of a Maven project, for this click to file
+
+
+Now we shall go for creation of a Maven project, for this click to file
+null
+Click to new maven project
+
+
+Click to new maven project
+null
+This is prompt you will get, click to next
+
+
+This is prompt you will get, click to next
+null
+Select “Artifact Id” to “maven-archetype-webapp”
+
+
+Select “Artifact Id” to “maven-archetype-webapp”
+null
+And on clicking next, you have to create a Group Id and Artifact Id
+l
+
+And on clicking next, you have to create a Group Id and Artifact Id
+null
+Now set the Artifact Id, to “frontend2”
+
+
+Now set the Artifact Id, to “frontend2”
+null
+Automatically you will get the package as this
+l
+
+Automatically you will get the package as this
+null
+Now click on “finish”
+
+
+Now click on “finish”
+null
+Now, here you can see your project is getting build
+
+
+Now, here you can see your project is getting build
+null
+Now, after creating your project will display like this
+
+
+Now, after creating your project will display like this
+null
+Now download a server “Tomcat 10.0” for development go to Browser and search for “Download Tomcat”
+
+
+Now download a server “Tomcat 10.0” for development  go to Browser and search for “Download Tomcat”
+null
+Click on the first link
+
+
+Click on the first link
+null
+This is the interface you will be getting,
+
+
+This is the interface you will be getting,
+null
+Go to binary distributions, and click to “64 bit windows zip
+
+
+Go to binary distributions, and click to “64 bit windows zip
+null
+And download the folder, unzip the zip file
+
+
+And download the folder, unzip the zip file
+Your file will get visible like this
+
+
+Your file will get visible like this
+null
+Get inside the folder,
+
+
+Get inside the folder,
+null
+Go back to eclipse and click on to window ( show view >> Servers)
+
+
+Go back to eclipse and click on to window ( show view >> Servers)
+null
+After clicking on servers, you will see a blue line in the console and then you will get a prompt for “New Server”
+
+
+After clicking on servers, you will see a blue line in the console and then you will get a prompt for “New Server”
+null
+Select Tomcat 9.0 server
+
+
+Select Tomcat 9.0 server
+null
+Go for setting the installation directory
+
+
+Go for setting the installation directory
+null
+Now go for Tomcat installation directory
+
+
+Now go for Tomcat installation directory
+null
+Now, go to folder where you have stored the server
+
+
+Now, go to folder where you have stored the server
+null
+Select the folder for “apache tomcat 9.0
+
+
+Select the folder for “apache tomcat 9.0
+null
+Click on next
+Now after restarting the server, We need to go for creation of xml files ie Dispatcherservlet.xml file.
+
+Click on next
+1. First create a folder in WEB-INF Folder
+l
+
+1. First create a folder in WEB-INF Folder
+null
+Name the folder as Views and click on finish
+
+
+Name the folder as Views and click on finish
+null
+Now drag the “index.jsp” file inside Views folder
+
+
+Now drag the “index.jsp” file inside Views folder
+null
+Now we will create a xml file in WEB-INF Folder
+
+
+Now we will create a xml file in WEB-INF Folder
+null
+Now you will view 2 folders in WEB-INF Folder ie “dispatcher-servlet.xml” and “web.xml file”.
+
+
+Now you will view 2 folders in WEB-INF Folder ie “dispatcher-servlet.xml” and “web.xml file”.
+null
+Go inside “web.xml” file and delete the entire content
+
+
+Go inside “web.xml” file and delete the entire content
+null
+And replace it with “web.xml configuration for Maven project”. For this, go to Google chrome and search for “web.xml configuration for Maven project”
+
+
+And replace it with “web.xml configuration for Maven project”. For this, go to Google chrome and search for “web.xml configuration for Maven project”
+null
+Copy the code, and paste it in web.xml file
+
+
+Copy the code, and paste it in web.xml file
+null
+Now we have to edit some fields, in the web.xml file
+
+
+Now we have to edit some fields, in the web.xml file
+null
+Replace the fields with,
+
+
+Replace the fields with,
+null
+Next Step
+Now you will encounter an error in the folder, where the file “pom.xml” will be asking to add the dependencies. So, firstly we will start with adding the dependency for “Servlet”. For this, go to chrome, and type “Maven repository” 
+
+Next Step
+Click the first link , and go for javax.servlet
+
+
+Click the first link , and go for javax.servlet
+null
+Click on the first link
+
+
+Click on the first link
+Click on 4.0.1 version
+
+
+Click on 4.0.1 version
+Here you will get the dependency
+
+
+Here you will get the dependency
+null
+Copy the dependency and paste it in pom.xml file
+
+
+Copy the dependency and paste it in pom.xml file
+null
+Similarly, we will add some more dependencies in pom.xml file. So now we have to add this plugins in <build></build>
+<plugins>
+
+<plugin>
+
+<artifactId>maven-compiler-plugin</artifactId>
+
+<version>3.1</version>
+
+<configuration>
+
+<source>1.8</source>
+
+<target>1.8</target>
+
+</configuration>
+
+</plugin>
+
+</plugins>
+
+It will look like this
+
+
+It will look like this
+null
+Now we will go for adding the dependency for MVC of the project. Go to chrome engine, and search for Maven Repository
+
+
+Now we will go for adding the dependency for MVC of the project. Go to chrome engine, and search for Maven Repository
+Select “spring web mvc”
+
+
+Select “spring web mvc”
+null
+Go to “Spring Web MVC”
+
+
+Go to “Spring Web MVC”
+null
+Choose the version “5.3.18”
+
+
+Choose the version “5.3.18”
+null
+Copy and paste the dependency
+
+
+Copy and paste the dependency
+null
+Copy and paste the dependency in the “pom.xml” file
+
+
+Copy and paste the dependency in the “pom.xml” file
+null
+Go to “dispatcher-servlet.xml” and paste this
+beans
+
+xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc" xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+
+">
+
+ 
+
+</beans>
+
+It will look like this
+
+
+It will look like this
+Now copy this code and paste inside <bean></bean>
+<context:component-scan base- package="com.ex.frontend2.Controller"></context:component-scan>
+
+<context:component-scan  base-package="com.ex.backend2"></context:component- scan>
+
+<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+<property name="prefix" value="/WEB-INF/views/"/>
+
+<property name="suffix" value=".jsp"/>
+
+</bean>
+
+<mvc:annotation-driven></mvc:annotation-driven>
+
+<mvc:resources location="/assets/" mapping="/resources/**"></mvc:resources>
+
+Now copy this code and paste inside <bean></bean>
+null
+Update the maven project
+
+
+Update the maven project
+null
+And update the maven project
+
+
+And update the maven project
+null
+Now create a folder in “webapp”
+
+
+Now create a folder in “webapp”
+null
+And name the folder as “assets” for saving the images inside it
+
+
+And name the folder as “assets” for saving the images inside it
+Now go to the project and right click, select properties
+
+
+Now go to the project and right click, select properties
+null
+Now, in project facets we have to set Java version to “1.8” and Dynamic web module to “3.1”
+
+
+Now, in project facets we have to set Java version to “1.8” and Dynamic web module to “3.1”
+null
+For this unselect the Java and Dynamic Web Module
+
+
+For this unselect the Java and Dynamic Web Module
+null
+Also cheak the runtime and select the “runtimes”
+
+
+Also cheak the runtime and select the “runtimes”
+null
+Cheak the “Apache server 9.0” and cheak it and apply and close
+
+
+Cheak the “Apache server 9.0” and cheak it and apply and close
+null
+After that, go to “maven” and update the project
+
+
+After that, go to “maven” and update the project
+null
+Now continue the process for 3-4 times, till your “Dynamic model” get version “3.0” and your “Java” get version
+
+
+Now continue the process for 3-4 times, till your “Dynamic model” get version “3.0” and your “Java” get version
+null
+Now if you continue the process ie “Update the project and change the facets” you can see the Java version and Dynamic
+
+
+Now if you continue the process ie “Update the project and change the facets” you can see the Java version and Dynamic
+null
+Now go to “index.jsp” page and here we have to add the jstl (java server tag library) tags. For this, we have to add a dependency in “pom.xml” file
+
+
+Now go to “index.jsp” page and here we have to add the jstl (java server tag library) tags. For this, we have to add a dependency in “pom.xml” file
+null
+Click on “jstl” and click on “version 1.2"
+
+
+Click on “jstl” and click on “version 1.2"
+null
+Copy the dependency
+
+
+Copy the dependency
+And paste it in pom.xml file
+
+
+And paste it in pom.xml file
+Now let’s go for “index.jsp” file and paste the “html” file inside the jsp file.
+
+
+Now let’s go for “index.jsp” file and paste the “html” file inside the jsp file.
+null
+Now we will add some “jstl tags” in “index.jsp” file and update the “uri”inside the tag
+
+
+Now we will add some “jstl tags” in “index.jsp” file and update the “uri”inside the tag
+null
+And also set the prefix = “c”
+
+
+And also set the prefix = “c”
+null
+Now go for another jstl tag also add a prefix to it
+
+
+Now go for another jstl tag also add a prefix to it
+null
+Now we shall go for creating a controller for front-end 2. For this first of all, create a package in “src/main”java”
+
+
+Now we shall go for creating a controller for front-end 2. For this first of all, create a package in “src/main”java”
+null
+And inside this package, create a java file “pagecontroller.java”
+
+
+And inside this package, create a java file “pagecontroller.java”
+null
+Now paste this inside the class
+
+
+Now paste this inside the class
+null
+Now we have to map for “register”
+@RequestMapping("/reg")
+
+public ResponseEntity<String> signUp(@ModelAttribute User user) {
+
+// Check if the user already exists
+
+User existingUser = userDao.getuserbyEmail(user.getEmailAddress()); if (existingUser != null) {
+
+return ResponseEntity.status(HttpStatus.CONFLICT).body("User with this email already exists.");
+
+}
+
+// Create the user
+
+boolean isUserCreated = userDao.createUser(user); if (isUserCreated) {
+
+return  ResponseEntity.status(HttpStatus.CREATED).body("<h1>User  created successfully.</h1>");
+
+} else {
+
+return  ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("<h1>Failed to  create user.</h1>");
+
+}
+
+Paste the code in .java page
+
+
+Paste the code in .java page
+null
+Paste the code in .java page
+
+
+Paste the code in .java page
+Now go for adding “annotation” for “requestmapping”
+@RequestMapping(value= {"/","/index"}) 
+
+Now go for adding “annotation” for “requestmapping”
+null
+Import the package for request mapping
+
+
+Import the package for request mapping
+null
+Provide an annotation for “controller” also import the package for “modelAndView
+
+
+Provide an annotation for “controller” also import the package for “modelAndView
+null
+Now add a folder in “assets” folder to save the “images” to be us
+
+
+Now add a folder in “assets” folder to save the “images” to be us
+null
+And inside the views folder, save the images
+
+
+And inside the views folder, save the images
+Now this is where we complete our front-end in Maven project
+Now run the code
+
+Now this is where we complete our front-end in Maven project
+Next Step
+
+
+Next Step
